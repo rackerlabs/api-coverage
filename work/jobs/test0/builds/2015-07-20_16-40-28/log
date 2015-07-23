@@ -1,0 +1,131 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pritic/Example-Project.git # timeout=10
+Fetching upstream changes from https://github.com/pritic/Example-Project.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision df0886e1cbaea67aacdcbdeea5cb3fa5f61c27cd (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f df0886e1cbaea67aacdcbdeea5cb3fa5f61c27cd
+ > git rev-list cb1ddc09af56602af8440076727b512b34a0ba67 # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson9154349401911786654.sh
++ cd src
++ javac exampleproject.java
+exampleproject.java:1: error: package org.json does not exist
+import org.json.JSONArray;
+               ^
+exampleproject.java:2: error: package org.json does not exist
+import org.json.JSONException;
+               ^
+exampleproject.java:3: error: package org.json does not exist
+import org.json.JSONObject;
+               ^
+exampleproject.java:16: error: cannot find symbol
+    public static void main(String args[]) throws JSONException {
+                                                  ^
+  symbol:   class JSONException
+  location: class exampleproject
+exampleproject.java:77: error: cannot find symbol
+    public static String readFile(String filename) throws JSONException {
+                                                          ^
+  symbol:   class JSONException
+  location: class exampleproject
+exampleproject.java:94: error: cannot find symbol
+        Map<Long, JSONObject> json_path_map= new HashMap<Long, JSONObject>();
+                  ^
+  symbol:   class JSONObject
+  location: class exampleproject
+exampleproject.java:94: error: cannot find symbol
+        Map<Long, JSONObject> json_path_map= new HashMap<Long, JSONObject>();
+                                                               ^
+  symbol:   class JSONObject
+  location: class exampleproject
+exampleproject.java:97: error: cannot find symbol
+        JSONObject j_obj;
+        ^
+  symbol:   class JSONObject
+  location: class exampleproject
+exampleproject.java:99: error: cannot find symbol
+            j_obj = new JSONObject("{"+matchPattern.group(1)+"}");
+                        ^
+  symbol:   class JSONObject
+  location: class exampleproject
+exampleproject.java:102: error: cannot find symbol
+            JSONArray jsonMainArr = j_obj.getJSONArray("steps");
+            ^
+  symbol:   class JSONArray
+  location: class exampleproject
+10 errors
+Build step 'Execute shell' marked build as failure
+template: digraph Checker 
+{ 
+rankdir=LR; 
+fontname="Helvetica"; 
+labelloc=b;
+       
+                    node [fontname="Helvetica", shape=ellipse, style=filled,fillcolor="#EEEEEE"]
+               
+           {
+           rank=source
+           REAL_START
+}
+               {
+               rank=same
+           S0
+           }
+           {
+           REAL_START->S0
+           S0->S0_a_observer [label="H (X-ROLES : a:observer)"];
+           S0->S0_a_admin [label="H (X-ROLES : a:admin)"];
+           S0_a_observer->d58e4_a_observer [label="U (a)"];
+           S0_a_admin->d58e4_a_admin [label="U (a)"];
+           d58e4_a_observer->d58e5_a_observer [label="M (GET)"];
+           d58e5_a_observer->SA [label="ε"];
+           d58e4_a_admin->d58e5_a_admin [label="M (GET)"];
+           d58e4_a_admin->d58e9_a_admin [label="M (POST)"];
+           d58e4_a_admin->d58e12_a_admin [label="M (DELETE)"];
+           d58e5_a_admin->SA [label="ε"];
+           d58e9_a_admin->SA [label="ε"];
+           d58e12_a_admin->SA [label="ε"];
+           }
+
+//Nodes
+
+       REAL_START[style=invis]
+S0[label="S0", fillcolor="white"]
+S0_a_observer[label="S0_a_observer"]
+SA[label="SA", shape=doublecircle, fillcolor="white"]
+S0_a_admin[label="S0_a_admin"]
+d58e4_a_observer[label="d58e4_a_observer", fillcolor="yellowgreen"]
+d58e5_a_observer[label="d58e5_a_observer"]
+d58e4_a_admin[label="d58e4_a_admin", fillcolor="yellowgreen"]
+d58e5_a_admin[label="d58e5_a_admin"]
+d58e9_a_admin[label="d58e9_a_admin"]
+d58e12_a_admin[label="d58e12_a_admin"]
+}
+
+ERROR: Publisher org.jenkinsci.plugins.ultimatecoverage.UltimateCoverage aborted due to exception
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mnet.sf.json.JSONException: A JSONObject text must begin with '{' at character 1 of 2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","fail"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","fail"]}
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONObject._fromJSONTokener(JSONObject.java:919)
+	at net.sf.json.JSONObject._fromString(JSONObject.java:1145)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:162)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:132)
+	at org.jenkinsci.plugins.ultimatecoverage.UltimateCoverage.perform(UltimateCoverage.java:56)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:734)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:683)
+	at hudson.model.Run.execute(Run.java:1770)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
+Finished: FAILURE

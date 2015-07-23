@@ -1,0 +1,85 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pritic/Example-Project.git # timeout=10
+Fetching upstream changes from https://github.com/pritic/Example-Project.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c24c4345c265d6376477eeea30b321bc8b82c7f4 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c24c4345c265d6376477eeea30b321bc8b82c7f4
+ > git rev-list c24c4345c265d6376477eeea30b321bc8b82c7f4 # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson3188841332317643694.sh
++ cp path.json .
+cp: ./path.json and path.json are identical (not copied).
+Build step 'Execute shell' marked build as failure
+path: {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+{"steps":["S0","S0_a_admin","d58e4_a_admin","fail"]}
+{"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+{"steps":["S0","S0_a_observer","d58e4_a_observer","d58e5_a_observer","SA"]}
+{"steps":["S0","S0_a_admin","d58e4_a_admin","fail"]}
+template: digraph Checker 
+{ 
+rankdir=LR; 
+fontname="Helvetica"; 
+labelloc=b;
+       
+                    node [fontname="Helvetica", shape=ellipse, style=filled,fillcolor="#EEEEEE"]
+               
+           {
+           rank=source
+           REAL_START
+}
+               {
+               rank=same
+           S0
+           }
+           {
+           REAL_START->S0
+           S0->S0_a_observer [label="H (X-ROLES : a:observer)"];
+           S0->S0_a_admin [label="H (X-ROLES : a:admin)"];
+           S0_a_observer->d58e4_a_observer [label="U (a)"];
+           S0_a_admin->d58e4_a_admin [label="U (a)"];
+           d58e4_a_observer->d58e5_a_observer [label="M (GET)"];
+           d58e5_a_observer->SA [label="ε"];
+           d58e4_a_admin->d58e5_a_admin [label="M (GET)"];
+           d58e4_a_admin->d58e5_a_admin [label="M (GET)"];
+           d58e4_a_admin->d58e9_a_admin [label="M (POST)"];
+           d58e4_a_admin->d58e12_a_admin [label="M (DELETE)"];
+           d58e5_a_admin->SA [label="ε"];
+           d58e9_a_admin->SA [label="ε"];
+           d58e12_a_admin->SA [label="ε"];
+           }
+
+//Nodes
+
+       REAL_START[style=invis]
+S0[label="S0", fillcolor="white"]
+S0_a_observer[label="S0_a_observer"]
+SA[label="SA", shape=doublecircle, fillcolor="white"]
+S0_a_admin[label="S0_a_admin"]
+d58e4_a_observer[label="d58e4_a_observer", fillcolor="yellowgreen"]
+d58e5_a_observer[label="d58e5_a_observer"]
+d58e4_a_admin[label="d58e4_a_admin", fillcolor="yellowgreen"]
+d58e5_a_admin[label="d58e5_a_admin"]
+d58e9_a_admin[label="d58e9_a_admin"]
+d58e12_a_admin[label="d58e12_a_admin"]
+}
+
+ERROR: Publisher org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher aborted due to exception
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mjava.lang.NullPointerException
+	at org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher.verification(APICoveragePluginPublisher.java:127)
+	at org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher.perform(APICoveragePluginPublisher.java:67)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:734)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:683)
+	at hudson.model.Run.execute(Run.java:1770)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
+Finished: FAILURE

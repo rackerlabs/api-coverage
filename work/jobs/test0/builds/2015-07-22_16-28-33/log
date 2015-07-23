@@ -1,0 +1,42 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pritic/Example-Project.git # timeout=10
+Fetching upstream changes from https://github.com/pritic/Example-Project.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5c1f7f113a81d99d7e90773692cdd031c39a146f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5c1f7f113a81d99d7e90773692cdd031c39a146f
+ > git rev-list d035146f253d1eee2ce3017e925b1bbb1cd0d676 # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson9027855505367890147.sh
++ cd src
++ javac exampleproject.java
++ java exampleproject
++ cp path.json .
+cp: ./path.json and path.json are identical (not copied).
+Build step 'Execute shell' marked build as failure
+ERROR: Publisher org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher aborted due to exception
+[8mha:AAAAWB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P08vOT+vOD8nVc8DzHWtSE4tKMnMz/PLL0ldFVf2c+b/lb5MDAwVRQxSaBqcITRIIQMEMIIUFgAAckCEiWAAAAA=[0mnet.sf.json.JSONException: A JSONObject text must begin with '{' at character 1 of 2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+	at net.sf.json.util.JSONTokener.syntaxError(JSONTokener.java:499)
+	at net.sf.json.JSONObject._fromJSONTokener(JSONObject.java:919)
+	at net.sf.json.JSONObject._fromString(JSONObject.java:1145)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:162)
+	at net.sf.json.JSONObject.fromObject(JSONObject.java:132)
+	at org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher.perform(APICoveragePluginPublisher.java:60)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:770)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:734)
+	at hudson.model.Build$BuildExecution.post2(Build.java:183)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:683)
+	at hudson.model.Run.execute(Run.java:1770)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:89)
+	at hudson.model.Executor.run(Executor.java:240)
+Finished: FAILURE

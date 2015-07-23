@@ -1,0 +1,16 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pritic/Example-Project.git # timeout=10
+Fetching upstream changes from https://github.com/pritic/Example-Project.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 5c1f7f113a81d99d7e90773692cdd031c39a146f (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 5c1f7f113a81d99d7e90773692cdd031c39a146f
+ > git rev-list 5c1f7f113a81d99d7e90773692cdd031c39a146f # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson2984807427991809719.sh
+Finished: SUCCESS

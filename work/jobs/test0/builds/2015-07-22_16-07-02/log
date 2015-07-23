@@ -1,0 +1,19 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/pritic/Example-Project.git # timeout=10
+Fetching upstream changes from https://github.com/pritic/Example-Project.git
+ > git --version # timeout=10
+ > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision d035146f253d1eee2ce3017e925b1bbb1cd0d676 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f d035146f253d1eee2ce3017e925b1bbb1cd0d676
+ > git rev-list d035146f253d1eee2ce3017e925b1bbb1cd0d676 # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson8336948261082396257.sh
++ cp path.json .
+cp: ./path.json and path.json are identical (not copied).
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

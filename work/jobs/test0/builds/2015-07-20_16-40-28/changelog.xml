@@ -1,0 +1,12 @@
+commit df0886e1cbaea67aacdcbdeea5cb3fa5f61c27cd
+tree 90a3f459e4319baad3906c9045ca89cfbd7875f5
+parent cb1ddc09af56602af8440076727b512b34a0ba67
+author Priti Changlani <changlani.priti@gmail.com> 1437428387 -0500
+committer Priti Changlani <changlani.priti@gmail.com> 1437428387 -0500
+
+    edited the path file
+
+:100644 100644 4a858d33e5a22142c952d52b2487cc07161631ed 9c62302082ad3d1fa3eac3b6b18568935d6e1928 M	.idea/workspace.xml
+:100644 100644 b13585b7df29ab02cc73dccaf0f8f759ed06a489 929e9c1a18e1b435ca06635d1e8150cc883cd354 M	out/production/Example Project/exampleproject.class
+:100644 100644 96be1973657db8c29235c29d2e6ae7681ada6574 baa87e6f454ad8b8f888b8b217ba736f4d13c6fd M	path.json
+:100644 100644 61e41228fc28d43f89e39acd43c974d86d79b4cf 114c041cd3e205e7ffce7c65df88b303558bded1 M	src/exampleproject.java

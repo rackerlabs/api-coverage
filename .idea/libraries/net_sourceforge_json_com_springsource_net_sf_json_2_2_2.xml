@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="net.sourceforge.json:com.springsource.net.sf.json:2.2.2" type="repository">
+    <properties maven-id="net.sourceforge.json:com.springsource.net.sf.json:2.2.2" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/json/com.springsource.net.sf.json/2.2.2/com.springsource.net.sf.json-2.2.2.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.beanutils/1.7.0/com.springsource.org.apache.commons.beanutils-1.7.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.collections/3.2.0/com.springsource.org.apache.commons.collections-3.2.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.logging/1.1.1/com.springsource.org.apache.commons.logging-1.1.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/com.springsource.org.apache.commons.lang/2.1.0/com.springsource.org.apache.commons.lang-2.1.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/ezmorph/com.springsource.net.sf.ezmorph/1.0.5/com.springsource.net.sf.ezmorph-1.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
