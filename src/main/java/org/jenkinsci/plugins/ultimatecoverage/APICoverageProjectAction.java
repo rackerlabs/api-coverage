@@ -92,7 +92,6 @@ public class APICoverageProjectAction implements Action {
 
                     }
                 }
-
                 return dataSetBuilder;
             }
         };
@@ -107,9 +106,9 @@ public class APICoverageProjectAction implements Action {
     private abstract class GraphImpl extends Graph {
         private final String graphTitle;
 
-        protected GraphImpl(final String metricKey) {
-            super(-1, 400, 400); // cannot use timestamp, since ranges may change
-            this.graphTitle = metricKey;
+        protected GraphImpl(final String graphName) {
+            super(-1, 400, 400);
+            this.graphTitle = graphName;
         }
 
         protected abstract DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet();

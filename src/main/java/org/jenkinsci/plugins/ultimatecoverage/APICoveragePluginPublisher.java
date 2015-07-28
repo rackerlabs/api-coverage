@@ -19,34 +19,42 @@ import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 
 import javax.servlet.ServletException;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class APICoveragePluginPublisher extends Recorder {
 
-    private final String name;
-    private String template;
+    private String templateFile;
+    private String stepsFile;
 
     @DataBoundConstructor
-    public APICoveragePluginPublisher(String name) {
-        this.name = name;
+    public APICoveragePluginPublisher(String stepsFile, String templateFile) {
+
+        this.stepsFile = stepsFile;
+        this.templateFile = templateFile;
     }
 
-    public String getName() {
-        return name;
+    public String getStepsFile() {
+        return this.stepsFile;
     }
+
+    public String getTemplateFile() {return this.templateFile;}
 
     @Override
     public boolean perform(final AbstractBuild build, Launcher launcher, BuildListener listener) {
-        FilePath fp_path = new FilePath(build.getWorkspace(), "path.json");
-        FilePath fp_template = new FilePath(build.getWorkspace(), "template.json");
+        FilePath fp_path = new FilePath(build.getWorkspace(), getStepsFile());
+        FilePath fp_template = new FilePath(build.getWorkspace(), getTemplateFile());
 
-        String jsonData_path = null;
+        String jsonData_path = null, template = null;
 
         try {
             jsonData_path = fp_path.readToString();
             template = fp_template.readToString();
+        } catch (FileNotFoundException e) {
+            System.out.println("The user entered file name does not exist in the workspace. ");
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
@@ -98,18 +106,23 @@ public class APICoveragePluginPublisher extends Recorder {
     @Extension
     public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
 
-        private boolean useFrench;
-
         public DescriptorImpl() {
             load();
         }
 
-        public FormValidation doCheckName(@QueryParameter String value)
+        public FormValidation doCheckTemplateFile(@QueryParameter String value)
                 throws IOException, ServletException {
             if (value.length() == 0)
-                return FormValidation.error("Please set a name");
-            if (value.length() < 4)
-                return FormValidation.warning("Isn't the name too short?");
+                return FormValidation.error("Please provide the file name with extension");
+
+            return FormValidation.ok();
+        }
+
+        public FormValidation doCheckStepsFile(@QueryParameter String value)
+                throws IOException, ServletException {
+            if (value.length() == 0)
+                return FormValidation.error("Please provide the file name with extension");
+
             return FormValidation.ok();
         }
 
@@ -118,18 +131,13 @@ public class APICoveragePluginPublisher extends Recorder {
         }
 
         public String getDisplayName() {
-            return "Say hello world: Pritiiiii";
+            return "Enable API Coverage";
         }
 
         @Override
         public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
-            useFrench = formData.getBoolean("useFrench");
             save();
             return super.configure(req, formData);
-        }
-
-        public boolean getUseFrench() {
-            return useFrench;
         }
     }
 }

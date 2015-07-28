@@ -40,7 +40,8 @@ cp /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace/src/tem
   </builders>
   <publishers>
     <org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher plugin="ultimate-coverage@1.0-SNAPSHOT">
-      <name>prits</name>
+      <templateFile>template.json</templateFile>
+      <stepsFile>path.json</stepsFile>
     </org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher>
   </publishers>
   <buildWrappers/>
