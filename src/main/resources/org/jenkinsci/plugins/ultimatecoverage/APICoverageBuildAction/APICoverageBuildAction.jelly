@@ -5,8 +5,7 @@
 
     <input type="hidden" value="${it.Template}" id="graph-data"/>
 
-
-    <script width="80px" height="80px" type="text/javascript">
+    <script type="text/javascript">
     $(function() {
         var elem = document.getElementById('steps');
         elem.style.display = 'none';
@@ -25,9 +24,11 @@
             first.parentNode.insertBefore(jsGraphviz, first);
             jsGraphviz.innerHTML = $('#graph-data').val();
             $('#' + div.id).append(render("sample", "svg")); //this renders a role
+            document.getElementById("sample").setAttribute('width', '1000px');
         } else {
             document.getElementById(data.id).innerHTML = $('#graph-data').val();
             $('#' + div.id).html(render("sample", "svg")); //this renders a role
+            document.getElementById("sample").setAttribute('width', '1000px');
         }
 
         coverPath();
@@ -93,7 +94,6 @@
     function src(id) {
         return document.getElementById(id).innerHTML;
     }
-
 
     var failedNodes = ['METHOD_FAIL', 'URL_FAIL', 'CONTENT_TYPE_FAIL']
     var positiveNodes = ['ACCEPT']

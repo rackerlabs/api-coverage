@@ -65,18 +65,21 @@ public class APICoveragePluginPublisher extends Recorder {
         Matcher matchPattern1 = logEntry1.matcher(jsonData_path);
 
         JSONArray jArray = new JSONArray();
-        String temp = "";
+        String temp;
+        String path_str="";
 
         while (matchPattern1.find()) {
             temp = matchPattern1.group();
             jArray.add(temp);
+
+            path_str = path_str+"{\"steps\":"+matchPattern1.group()+"}\n";
         }
 
         JSONObject jobj = new JSONObject();
         jobj.put("steps", jArray);
 
         APICoverageBuildAction buildAction;
-        buildAction = new APICoverageBuildAction(build, jobj, template);
+        buildAction = new APICoverageBuildAction(build, path_str.trim(), template);
         build.addAction(buildAction);
 
 

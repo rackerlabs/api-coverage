@@ -16,7 +16,11 @@ import java.util.regex.Pattern;
 public class Report {
     private long timestamp;
     private AbstractBuild build;
-
+    private long totalCalls;
+    private long failures;
+    private long passes;
+    private double percentHappy;
+    private double percentUnhappy;
 
     public AbstractBuild<?, ?> getBuild() {
         return build;
@@ -30,12 +34,6 @@ public class Report {
         this.build = build;
         this.timestamp = timestamp;
     }
-
-    private long totalCalls;
-    private long failures;
-    private long passes;
-    private double percentHappy;
-    private double percentUnhappy;
 
     public double getPercentUnhappy() {
         return this.percentUnhappy;

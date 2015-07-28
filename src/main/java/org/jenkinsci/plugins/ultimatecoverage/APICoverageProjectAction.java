@@ -34,7 +34,7 @@ public class APICoverageProjectAction implements Action {
 
     @Override
     public String getIconFileName() {
-        return "iconfilename";
+        return "/plugin/ultimate-coverage/img/line_chart_icon.jpg";
     }
 
     public String getDisplayName() {
@@ -70,7 +70,6 @@ public class APICoverageProjectAction implements Action {
     public APICoverageProjectAction(final AbstractProject<?, ?> project) {
         System.out.println("in APICoverageProjectAction's constructor");
         this.project = project;
-        //this.ExistingReports = ExistingReports;
     }
 
     private void createGraph(final StaplerRequest request, final StaplerResponse response) throws IOException {
@@ -127,7 +126,6 @@ public class APICoverageProjectAction implements Action {
             );
 
             chart.setBackgroundPaint(Color.white);
-
 
             final CategoryPlot plot = chart.getCategoryPlot();
             plot.setBackgroundPaint(Color.WHITE);

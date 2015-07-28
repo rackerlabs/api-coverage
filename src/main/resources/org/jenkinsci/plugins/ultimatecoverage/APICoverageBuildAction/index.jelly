@@ -1,6 +1,4 @@
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
-         xmlns:l="/lib/layout"
-         xmlns:g="/org/jenkinsci/plugins/ultimatecoverage/tags">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
     <l:layout>
         <st:include it="${it.build}" page="sidepanel.jelly"/>
         <l:main-panel>
@@ -9,6 +7,25 @@
 
             <h1>${it.displayName}</h1>
             <st:include page="APICoverageBuildAction.jelly"/>
+            <table cellspacing="0" cellpadding="0"
+                   class="background_transparent" border="1">
+                <tr>
+                    <td width="50%">Total Passing API Calls</td>
+                    <td>${it.Report.passes}</td>
+                </tr>
+                <tr>
+                    <td width="50%">Total Failing API Calls</td>
+                    <td>${it.Report.Failures}</td>
+                </tr>
+                <tr>
+                    <td width="50%">Percent Fail</td>
+                    <td>${it.Report.PercentUnhappy}%</td>
+                </tr>
+                <tr>
+                    <td width="50%">Percent Pass</td>
+                    <td>${it.Report.PercentHappy}%</td>
+                </tr>
+            </table>
         </l:main-panel>
     </l:layout>
 </j:jelly>
