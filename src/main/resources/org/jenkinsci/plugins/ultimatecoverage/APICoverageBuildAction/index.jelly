@@ -1,4 +1,5 @@
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+         xmlns:l="/lib/layout"
          xmlns:g="/org/jenkinsci/plugins/ultimatecoverage/tags">
     <l:layout>
         <st:include it="${it.build}" page="sidepanel.jelly"/>

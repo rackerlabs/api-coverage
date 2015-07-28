@@ -2,6 +2,7 @@ package org.jenkinsci.plugins.ultimatecoverage;
 
 import hudson.model.AbstractBuild;
 import hudson.model.Action;
+import net.sf.json.JSONObject;
 
 import java.io.Serializable;
 
@@ -10,9 +11,19 @@ import java.io.Serializable;
  */
 public class APICoverageBuildAction implements Action, Serializable {
 
-    private String steps;
+    private JSONObject steps;
     private String template;
     private AbstractBuild<?, ?> build;
+
+    public Report getReport() {
+        return report;
+    }
+
+    public void setReport(Report report) {
+        this.report = report;
+    }
+
+    private Report report;
 
     @Override
     public String getIconFileName() {
@@ -29,9 +40,7 @@ public class APICoverageBuildAction implements Action, Serializable {
         return "BuildReport";
     }
 
-    public APICoverageBuildAction (final AbstractBuild<?, ?> build, final String steps, final String template)
-    {
-        System.out.println("in APICoverageBuildAction's constructor");
+    public APICoverageBuildAction(final AbstractBuild<?, ?> build, final JSONObject steps, final String template) {
         this.build = build;
         this.steps = steps;
         this.template = template;
@@ -41,11 +50,11 @@ public class APICoverageBuildAction implements Action, Serializable {
         return this.build;
     }
 
-    public String getSteps(){
+    public JSONObject getSteps() {
         return this.steps;
     }
 
-    public String getTemplate(){
+    public String getTemplate() {
         return this.template;
     }
 }
