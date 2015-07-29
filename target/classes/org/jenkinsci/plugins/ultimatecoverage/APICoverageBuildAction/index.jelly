@@ -1,14 +1,15 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
     <l:layout>
         <st:include it="${it.build}" page="sidepanel.jelly"/>
+        <st:include page="/tabview/css.jelly" />
         <l:main-panel>
             <script src="http://mdaines.github.io/viz.js/viz.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
             <h1>${it.displayName}</h1>
             <st:include page="APICoverageBuildAction.jelly"/>
-            <table cellspacing="0" cellpadding="0"
-                   class="background_transparent" border="1">
+            <center>
+            <table class="APICoverage">
                 <tr>
                     <td width="50%">Total Passing API Calls</td>
                     <td>${it.Report.passes}</td>
@@ -26,6 +27,7 @@
                     <td>${it.Report.PercentHappy}%</td>
                 </tr>
             </table>
+            </center>
         </l:main-panel>
     </l:layout>
 </j:jelly>

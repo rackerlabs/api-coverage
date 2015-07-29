@@ -2,15 +2,15 @@
          xmlns:l="/lib/layout">
     <l:layout>
         <st:include it="${it.project}" page="sidepanel.jelly"/>
+        <st:include page="/tabview/css.jelly" />
         <l:main-panel>
             <h1>${it.displayName}</h1>
             <center>
                 <img class="trend"
                      src="./projectGraph?width=600&amp;height=440" width="600"
                      height="440"/>
-            </center>
-            <table cellspacing="0" cellpadding="0"
-                   class="background_transparent" border="1">
+
+            <table class="APICoverage">
                 <tr>
                     <td width="50%">Total Passing API Calls</td>
                     <td>${it.totalPass}</td>
@@ -28,6 +28,7 @@
                     <td>${it.percentPass}%</td>
                 </tr>
             </table>
+            </center>
         </l:main-panel>
     </l:layout>
 </j:jelly>

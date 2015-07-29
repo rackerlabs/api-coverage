@@ -1,0 +1,11 @@
+<j:jelly xmlns:j="jelly:core">
+    <style type="text/css">
+
+        .APICoverage table, .APICoverage td {
+        border:1px solid #000;
+        text-align:center;
+        font-size:20px;
+        }
+
+    </style>
+</j:jelly>
