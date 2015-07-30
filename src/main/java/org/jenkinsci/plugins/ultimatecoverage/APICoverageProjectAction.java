@@ -32,6 +32,7 @@ public class APICoverageProjectAction implements Action {
         return this.project;
     }
 
+    public String getProjectName() {return this.project.getName();}
     @Override
     public String getIconFileName() {
         return "/plugin/ultimate-coverage/img/line_chart_icon.jpg";

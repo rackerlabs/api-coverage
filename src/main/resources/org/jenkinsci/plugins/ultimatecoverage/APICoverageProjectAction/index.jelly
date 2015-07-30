@@ -9,7 +9,7 @@
                 <img class="trend"
                      src="./projectGraph?width=600&amp;height=440" width="600"
                      height="440"/>
-
+            <h2>Report for Project '${it.ProjectName}' (includes the above shown builds only)</h2>
             <table class="APICoverage">
                 <tr>
                     <td width="50%">Total Passing API Calls</td>

@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class APICoverageBuildAction implements Action, Serializable {
 
     private String steps;
-    private String template;
+    private String templateString;
     private AbstractBuild<?, ?> build;
     private Report report;
 
@@ -22,6 +22,8 @@ public class APICoverageBuildAction implements Action, Serializable {
     public void setReport(Report report) {
         this.report = report;
     }
+
+    public int getBuildNumber() {return this.build.number;}
 
     @Override
     public String getIconFileName() {
@@ -38,10 +40,10 @@ public class APICoverageBuildAction implements Action, Serializable {
         return "BuildReport";
     }
 
-    public APICoverageBuildAction(final AbstractBuild<?, ?> build, final String path_str, final String template) {
+    public APICoverageBuildAction(final AbstractBuild<?, ?> build, final String path_str, final String templateString) {
         this.build = build;
         this.steps = path_str;
-        this.template = template;
+        this.templateString = templateString;
     }
 
     public AbstractBuild<?, ?> getBuild() {
@@ -53,6 +55,6 @@ public class APICoverageBuildAction implements Action, Serializable {
     }
 
     public String getTemplate() {
-        return this.template;
+        return this.templateString;
     }
 }

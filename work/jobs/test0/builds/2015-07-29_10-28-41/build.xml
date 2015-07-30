@@ -21,7 +21,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>115</hudsonBuildNumber>
+            <hudsonBuildNumber>124</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -46,7 +46,7 @@
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e4MF_a_admin&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_observer&quot;,&quot;d58e4_a_observer&quot;,&quot;d58e5_a_observer&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;fail&quot;]}</steps>
-      <templateString>digraph Checker
+      <template>digraph Checker 
 { 
 rankdir=LR; 
 fontname=&quot;Helvetica&quot;; 
@@ -96,7 +96,7 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
 </template>
       <build class="build" reference="../../.."/>
       <report>
-        <timestamp>1438119383699</timestamp>
+        <timestamp>1438183721479</timestamp>
         <build class="build" reference="../../../.."/>
         <totalCalls>5</totalCalls>
         <failures>4</failures>
@@ -106,10 +106,10 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
       </report>
     </org.jenkinsci.plugins.ultimatecoverage.APICoverageBuildAction>
   </actions>
-  <number>115</number>
-  <startTime>1438119383702</startTime>
+  <number>124</number>
+  <startTime>1438183721482</startTime>
   <result>SUCCESS</result>
-  <duration>1384</duration>
+  <duration>1454</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

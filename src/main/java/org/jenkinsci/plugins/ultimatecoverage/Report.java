@@ -55,11 +55,11 @@ public class Report {
         return this.percentHappy;
     }
 
-    public Report getBuildReport(JSONObject jobj_path, String template) {
+    public Report getBuildReport(JSONObject jobj_path, String templateString) {
         Pattern logEntry = Pattern.compile("[^;|\\{|\t|\n|\\s" +
                 "]*->(.*?)[^\\s|\t|\n" +
                 "|;]*");
-        Matcher matchPattern = logEntry.matcher(template);
+        Matcher matchPattern = logEntry.matcher(templateString);
 
         Map<String, HashSet<String>> valid_template_map = new HashMap<String, HashSet<String>>();
         HashSet<String> hs;

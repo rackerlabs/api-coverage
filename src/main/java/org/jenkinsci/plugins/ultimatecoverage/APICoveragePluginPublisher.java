@@ -31,7 +31,6 @@ public class APICoveragePluginPublisher extends Recorder {
 
     @DataBoundConstructor
     public APICoveragePluginPublisher(String stepsFile, String templateFile) {
-
         this.stepsFile = stepsFile;
         this.templateFile = templateFile;
     }
@@ -47,11 +46,11 @@ public class APICoveragePluginPublisher extends Recorder {
         FilePath fp_path = new FilePath(build.getWorkspace(), getStepsFile());
         FilePath fp_template = new FilePath(build.getWorkspace(), getTemplateFile());
 
-        String jsonData_path = null, template = null;
+        String pathString = null, templateString = null;
 
         try {
-            jsonData_path = fp_path.readToString();
-            template = fp_template.readToString();
+            pathString = fp_path.readToString();
+            templateString = fp_template.readToString();
         } catch (FileNotFoundException e) {
             System.out.println("The user entered file name does not exist in the workspace. ");
             e.printStackTrace();
@@ -61,32 +60,31 @@ public class APICoveragePluginPublisher extends Recorder {
             e.printStackTrace();
         }
 
-        Pattern logEntry1 = Pattern.compile("\\[\"(.*?)\"\\]");
-        Matcher matchPattern1 = logEntry1.matcher(jsonData_path);
+        Pattern patternPaths = Pattern.compile("\\[\"(.*?)\"\\]");
+        Matcher matchPaths = patternPaths.matcher(pathString);
 
         JSONArray jArray = new JSONArray();
         String temp;
         String path_str="";
 
-        while (matchPattern1.find()) {
-            temp = matchPattern1.group();
+        while (matchPaths.find()) {
+            temp = matchPaths.group();
             jArray.add(temp);
-
-            path_str = path_str+"{\"steps\":"+matchPattern1.group()+"}\n";
+            path_str = path_str+"{\"steps\":"+matchPaths.group()+"}\n";
         }
 
         JSONObject jobj = new JSONObject();
         jobj.put("steps", jArray);
 
         APICoverageBuildAction buildAction;
-        buildAction = new APICoverageBuildAction(build, path_str.trim(), template);
+        buildAction = new APICoverageBuildAction(build, path_str.trim(), templateString);
         build.addAction(buildAction);
 
 
-        Report Report_Obj = new Report(build.getTimeInMillis(), build);
-        Report_Obj.getBuildReport(jobj, template);
+        Report report = new Report(build.getTimeInMillis(), build);
+        report.getBuildReport(jobj, templateString);
 
-        buildAction.setReport(Report_Obj);
+        buildAction.setReport(report);
 
         return true;
     }
