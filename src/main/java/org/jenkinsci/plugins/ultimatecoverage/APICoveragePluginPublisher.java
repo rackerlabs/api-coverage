@@ -31,7 +31,6 @@ public class APICoveragePluginPublisher extends Recorder {
 
     @DataBoundConstructor
     public APICoveragePluginPublisher(String stepsFile, String templateFile) {
-
         this.stepsFile = stepsFile;
         this.templateFile = templateFile;
     }
@@ -83,10 +82,12 @@ public class APICoveragePluginPublisher extends Recorder {
         build.addAction(buildAction);
 
 
-        Report Report_Obj = new Report(build.getTimeInMillis(), build);
-        Report_Obj.getBuildReport(jobj, template);
+        Report report = new Report(build.getTimeInMillis(), build);
+        Statistics statistics = new Statistics();
+        statistics.getStats(jobj, template);
 
-        buildAction.setReport(Report_Obj);
+        report.setStatistics(statistics);
+        buildAction.setReport(report);
 
         return true;
     }

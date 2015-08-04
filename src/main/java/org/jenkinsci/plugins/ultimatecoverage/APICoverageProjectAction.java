@@ -33,6 +33,7 @@ public class APICoverageProjectAction implements Action {
     }
 
     public String getProjectName() {return this.project.getName();}
+
     @Override
     public String getIconFileName() {
         return "/plugin/ultimate-coverage/img/line_chart_icon.jpg";
@@ -87,9 +88,8 @@ public class APICoverageProjectAction implements Action {
                     Run<?, ?> build = report.getBuild();
                     if (build != null) {
 
-                        dataSetBuilder.add(report.getPercentHappy(), "Passes", new NumberOnlyBuildLabel(build));
-                        System.out.println(report.getPercentUnhappy());
-                        dataSetBuilder.add(report.getPercentUnhappy(), "Failures", new NumberOnlyBuildLabel(build));
+                        dataSetBuilder.add(report.getStatistics().getPercentHappy(), "Passes", new NumberOnlyBuildLabel(build));
+                        dataSetBuilder.add(report.getStatistics().getPercentUnhappy(), "Failures", new NumberOnlyBuildLabel(build));
 
                     }
                 }

@@ -21,7 +21,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>127</hudsonBuildNumber>
+            <hudsonBuildNumber>139</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -48,7 +48,7 @@
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_observer&quot;,&quot;d58e4_a_observer&quot;,&quot;d58e5_a_observer&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_observer&quot;,&quot;d58e4_a_observer&quot;,&quot;d58e5_a_observer&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;fail&quot;]}</steps>
-      <template>digraph Checker
+      <template>digraph Checker 
 { 
 rankdir=LR; 
 fontname=&quot;Helvetica&quot;; 
@@ -98,20 +98,22 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
 </template>
       <build class="build" reference="../../.."/>
       <report>
-        <timestamp>1438356670413</timestamp>
+        <timestamp>1438718223549</timestamp>
         <build class="build" reference="../../../.."/>
-        <totalCalls>7</totalCalls>
-        <failures>2</failures>
-        <passes>5</passes>
-        <percentHappy>71.42857142857143</percentHappy>
-        <percentUnhappy>28.57142857142857</percentUnhappy>
+        <statistics>
+          <totalCalls>7</totalCalls>
+          <failures>2</failures>
+          <passes>5</passes>
+          <percentHappy>71.42857142857143</percentHappy>
+          <percentUnhappy>28.57142857142857</percentUnhappy>
+        </statistics>
       </report>
     </org.jenkinsci.plugins.ultimatecoverage.APICoverageBuildAction>
   </actions>
-  <number>127</number>
-  <startTime>1438356670414</startTime>
+  <number>139</number>
+  <startTime>1438718223551</startTime>
   <result>SUCCESS</result>
-  <duration>1749</duration>
+  <duration>1491</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>
@@ -120,7 +122,5 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
   <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@2.3.5">
     <authorOrCommitter>false</authorOrCommitter>
   </scm>
-  <culprits class="com.google.common.collect.RegularImmutableSortedSet">
-    <string>changlani.priti</string>
-  </culprits>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
 </build>

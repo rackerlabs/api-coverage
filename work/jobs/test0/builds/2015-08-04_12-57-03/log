@@ -12,7 +12,7 @@ Checking out Revision 878347f3214cb8ebeabf2f80b1959ca446923473 (refs/remotes/ori
  > git config core.sparsecheckout # timeout=10
  > git checkout -f 878347f3214cb8ebeabf2f80b1959ca446923473
  > git rev-list 878347f3214cb8ebeabf2f80b1959ca446923473 # timeout=10
-[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson6461951035494922124.sh
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson8146348521811029238.sh
 + cd src
 + javac exampleproject.java
 + java exampleproject

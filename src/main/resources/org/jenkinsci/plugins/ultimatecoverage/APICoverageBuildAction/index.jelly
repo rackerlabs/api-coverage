@@ -13,19 +13,19 @@
             <table class="APICoverage">
                 <tr>
                     <td width="50%">Total Passing API Calls</td>
-                    <td>${it.Report.passes}</td>
+                    <td>${it.Report.Statistics.passes}</td>
                 </tr>
                 <tr>
                     <td width="50%">Total Failing API Calls</td>
-                    <td>${it.Report.Failures}</td>
+                    <td>${it.Report.Statistics.Failures}</td>
                 </tr>
                 <tr>
                     <td width="50%">Percent Fail</td>
-                    <td>${it.Report.PercentUnhappy}%</td>
+                    <td>${it.Report.Statistics.PercentUnhappy}%</td>
                 </tr>
                 <tr>
                     <td width="50%">Percent Pass</td>
-                    <td>${it.Report.PercentHappy}%</td>
+                    <td>${it.Report.Statistics.PercentHappy}%</td>
                 </tr>
             </table>
             </center>

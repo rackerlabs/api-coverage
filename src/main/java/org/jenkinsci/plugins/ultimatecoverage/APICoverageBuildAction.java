@@ -23,6 +23,8 @@ public class APICoverageBuildAction implements Action, Serializable {
         this.report = report;
     }
 
+    public int getBuildNumber() {return this.build.number;}
+
     @Override
     public String getIconFileName() {
         return "/plugin/ultimate-coverage/img/image.png";

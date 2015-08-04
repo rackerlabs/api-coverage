@@ -2,45 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f724337a-70f1-4149-b23b-9440e998faaa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/115" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/116" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/117" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/118" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/119" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/120" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/121" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/122" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-36-23/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-36-23/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-36-23/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-40-32/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-40-32/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-40-32/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-50-25/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-50-25/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-50-25/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-52-20/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-52-20/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-52-20/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-53-54/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-53-54/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-53-54/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-58-40/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-58-40/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_16-58-40/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-01-03/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-01-03/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-01-03/log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-25-56/build.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-25-56/changelog.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-25-56/log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Statistics.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/123" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/124" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/125" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/127" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/128" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/129" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/130" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/131" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/132" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/133" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-38-03/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-38-03/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-28_17-38-03/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-29_10-28-41/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-29_10-28-41/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-29_10-28-41/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-23-16/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-23-16/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-23-16/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-31-10/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-31-10/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-31-10/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_14-52-54/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_14-52-54/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_14-52-54/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-07-47/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-07-47/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-07-47/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-23-22/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-23-22/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-23-22/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-14-05/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-14-05/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-14-05/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-56-50/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-56-50/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_16-56-50/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_19-41-28/build.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_19-41-28/changelog.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_19-41-28/log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work/queue.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher$DescriptorImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher$DescriptorImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction$1.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction$GraphImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction$GraphImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/Report.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/Report.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/Reports.class" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/Reports.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/lastStableBuild" afterPath="$PROJECT_DIR$/work/jobs/test0/builds/lastStableBuild" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/builds/lastSuccessfulBuild" afterPath="$PROJECT_DIR$/work/jobs/test0/builds/lastSuccessfulBuild" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/workspace" afterPath="$PROJECT_DIR$/work/jobs/test0/workspace" />
@@ -50,10 +59,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.stapler" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.stapler" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.java" afterPath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java" afterPath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java" afterPath="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/config.xml" afterPath="$PROJECT_DIR$/work/jobs/test0/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/updates/default.json" afterPath="$PROJECT_DIR$/work/updates/default.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" afterPath="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" afterPath="$PROJECT_DIR$/target/classes/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/nextBuildNumber" afterPath="$PROJECT_DIR$/work/jobs/test0/nextBuildNumber" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/plugins/ultimate-coverage.hpl" afterPath="$PROJECT_DIR$/work/plugins/ultimate-coverage.hpl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ultimate-coverage.iml" afterPath="$PROJECT_DIR$/ultimate-coverage.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ultimate-coverage.iws" />
@@ -76,24 +88,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="APICoverageBuildAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53435117">
+              <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+              <folding>
+                <element signature="e#409#410#0" expanded="true" />
+                <element signature="e#438#439#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="APICoverageProjectAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="73" selection-start-line="91" selection-start-column="73" selection-end-line="91" selection-end-column="73" />
+              <caret line="62" column="50" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Report.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="APICoveragePluginPublisher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reports.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.962963">
+              <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jelly" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.125">
+              <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jelly" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction/index.jelly">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21008404">
-              <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding>
-                <element signature="method#Report#0;class#Report#0" expanded="false" />
-                <element signature="e#1604#1629#0" expanded="true" />
+                <element signature="method#setStatistics#0;class#Report#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Statistics.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Statistics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getPercentUnhappy#0;class#Statistics#0" expanded="false" />
+                <element signature="method#getPercentHappy#0;class#Statistics#0" expanded="false" />
+                <element signature="e#1241#1266#0" expanded="true" />
+                <element signature="e#2113#2130#0" expanded="true" />
+                <element signature="e#2185#2202#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,8 +185,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Html5" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -135,21 +216,16 @@
         <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/UltimateCoverage.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/Report/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/tags/import.jelly" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Statistics.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/ReportData.java" />
         <option value="$PROJECT_DIR$/src/main/resources/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher/global.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher/help-name.html" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher/help-templateFile.html" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher/config.jelly" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/APICoverageBuildAction.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/tabview/css.jelly" />
-        <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction/index.jelly" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.java" />
         <option value="$PROJECT_DIR$/work/jobs/test0/builds/115/build.xml" />
         <option value="$PROJECT_DIR$/work/jobs/test0/builds/125/build.xml" />
         <option value="$PROJECT_DIR$/work/jobs/test0/builds/126/build.xml" />
@@ -168,8 +244,13 @@
         <option value="$PROJECT_DIR$/work/jobs/test0/builds/lastUnsuccessfulBuild/build.xml" />
         <option value="$PROJECT_DIR$/work/jobs/test0/lastStable/build.xml" />
         <option value="$PROJECT_DIR$/work/jobs/test0/lastSuccessful/build.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly" />
         <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Statistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.java" />
       </list>
     </option>
   </component>
@@ -363,36 +444,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="work" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jobs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test0" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="builds" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="129" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ultimate-coverage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ultimate-coverage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -510,6 +561,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="APICoverageProjectAction" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ultimate-coverage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ultimate-coverage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ultimatecoverage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="APICoveragePluginPublisher" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -936,7 +1017,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43465492" sideWeight="0.48569384" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38179147" sideWeight="0.48569384" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32452276" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34167895" sideWeight="0.5143061" order="1" side_tool="true" content_ui="tabs" />
@@ -1097,13 +1178,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89260143">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/jenkins-ci/main/jenkins-core/1.580.1/jenkins-core-1.580.1-sources.jar!/hudson/util/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1139,142 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction/index.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.730769">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/APICoverageBuildAction.jelly">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18987341">
-          <caret line="5" column="57" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/123/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
-          <folding>
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#821#822#0" expanded="true" />
-            <element signature="e#1081#1082#0" expanded="true" />
-            <element signature="e#1114#1115#0" expanded="true" />
-            <element signature="e#1146#1147#0" expanded="true" />
-            <element signature="e#1179#1180#0" expanded="true" />
-            <element signature="e#1214#1215#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="81" column="81" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="81" />
-          <folding>
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#3412#3413#0" expanded="true" />
-            <element signature="e#3442#3443#0" expanded="true" />
-            <element signature="e#4228#4229#0" expanded="true" />
-            <element signature="e#4280#4281#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/125/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/127/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/128/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/129/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="97" column="2" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-23-16/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/2015-07-31_10-31-10/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_14-52-54/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work/jobs/test0/builds/2015-08-03_15-07-47/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.708333">
-          <caret line="96" column="1" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1310,21 +1252,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/APICoverageBuildAction.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="5.0">
+          <caret line="5" column="57" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="73" selection-start-line="91" selection-start-column="73" selection-end-line="91" selection-end-column="73" />
+          <caret line="62" column="50" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Statistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="48" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getPercentUnhappy#0;class#Statistics#0" expanded="false" />
+            <element signature="method#getPercentHappy#0;class#Statistics#0" expanded="false" />
+            <element signature="e#1241#1266#0" expanded="true" />
+            <element signature="e#2113#2130#0" expanded="true" />
+            <element signature="e#2185#2202#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21008404">
-          <caret line="64" column="69" selection-start-line="64" selection-start-column="69" selection-end-line="64" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
           <folding>
-            <element signature="method#Report#0;class#Report#0" expanded="false" />
-            <element signature="e#1604#1629#0" expanded="true" />
+            <element signature="method#setStatistics#0;class#Report#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoveragePluginPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageProjectAction/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/Reports.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.962963">
+          <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction/index.jelly">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.125">
+          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jenkinsci/plugins/ultimatecoverage/APICoverageBuildAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53435117">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
           </folding>
         </state>
       </provider>

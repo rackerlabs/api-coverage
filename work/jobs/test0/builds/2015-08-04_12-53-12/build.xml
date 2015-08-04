@@ -21,7 +21,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>133</hudsonBuildNumber>
+            <hudsonBuildNumber>137</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -98,20 +98,22 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
 </template>
       <build class="build" reference="../../.."/>
       <report>
-        <timestamp>1438648888268</timestamp>
+        <timestamp>1438717992022</timestamp>
         <build class="build" reference="../../../.."/>
-        <totalCalls>7</totalCalls>
-        <failures>2</failures>
-        <passes>5</passes>
-        <percentHappy>71.42857142857143</percentHappy>
-        <percentUnhappy>28.57142857142857</percentUnhappy>
+        <statistics>
+          <totalCalls>7</totalCalls>
+          <failures>2</failures>
+          <passes>5</passes>
+          <percentHappy>71.42857142857143</percentHappy>
+          <percentUnhappy>28.57142857142857</percentUnhappy>
+        </statistics>
       </report>
     </org.jenkinsci.plugins.ultimatecoverage.APICoverageBuildAction>
   </actions>
-  <number>133</number>
-  <startTime>1438648888270</startTime>
+  <number>137</number>
+  <startTime>1438717992023</startTime>
   <result>SUCCESS</result>
-  <duration>2018</duration>
+  <duration>2846</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

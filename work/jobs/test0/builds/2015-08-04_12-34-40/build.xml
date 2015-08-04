@@ -12,7 +12,7 @@
           <string>refs/remotes/origin/master</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@1.17.1">
-              <sha1>4f90afef72daf5c139a01e891b01c805548336e9</sha1>
+              <sha1>878347f3214cb8ebeabf2f80b1959ca446923473</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -21,7 +21,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>123</hudsonBuildNumber>
+            <hudsonBuildNumber>136</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -42,8 +42,10 @@
     <hudson.scm.SCMRevisionState_-None/>
     <org.jenkinsci.plugins.ultimatecoverage.APICoverageBuildAction plugin="ultimate-coverage@1.0-SNAPSHOT">
       <steps>{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e4MF_a_admin&quot;]}
-{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;fail&quot;]}
-{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e4MF_a_admin&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e12_a_admin&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e12_a_admin&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;d58e12_a_admin&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_observer&quot;,&quot;d58e4_a_observer&quot;,&quot;d58e5_a_observer&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_observer&quot;,&quot;d58e4_a_observer&quot;,&quot;d58e5_a_observer&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;S0_a_admin&quot;,&quot;d58e4_a_admin&quot;,&quot;fail&quot;]}</steps>
       <template>digraph Checker 
@@ -96,20 +98,22 @@ d58e12_a_admin[label=&quot;d58e12_a_admin&quot;]
 </template>
       <build class="build" reference="../../.."/>
       <report>
-        <timestamp>1438123083891</timestamp>
+        <timestamp>1438716880650</timestamp>
         <build class="build" reference="../../../.."/>
-        <totalCalls>5</totalCalls>
-        <failures>4</failures>
-        <passes>1</passes>
-        <percentHappy>20.0</percentHappy>
-        <percentUnhappy>80.0</percentUnhappy>
+        <statistics>
+          <totalCalls>7</totalCalls>
+          <failures>2</failures>
+          <passes>5</passes>
+          <percentHappy>71.42857142857143</percentHappy>
+          <percentUnhappy>28.57142857142857</percentUnhappy>
+        </statistics>
       </report>
     </org.jenkinsci.plugins.ultimatecoverage.APICoverageBuildAction>
   </actions>
-  <number>123</number>
-  <startTime>1438123083894</startTime>
+  <number>136</number>
+  <startTime>1438716880653</startTime>
   <result>SUCCESS</result>
-  <duration>1417</duration>
+  <duration>1756</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

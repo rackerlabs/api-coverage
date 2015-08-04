@@ -11,20 +11,6 @@ import java.util.List;
  */
 public class Reports {
 
-//    public List<Report> getListOfPreviousReports(AbstractBuild<?, ?> build, final long currentTimestamp)
-//    {
-//        List<Report> previousReports = new ArrayList<Report>();
-//
-//        List<? extends AbstractBuild<?, ?>> builds = build.getProject().getBuilds();
-//
-//        for (AbstractBuild<?, ?> currentBuild : builds) {
-//            Report report = getReportForBuild(currentBuild);
-//            if (report != null && (report.getTimestamp() != currentTimestamp || builds.size() == 1))
-//                previousReports.add(report);
-//        }
-//        return previousReports;
-//    }
-
     public Report getReportForBuild(AbstractBuild<?,?> currentBuild){
         if(currentBuild != null){
             APICoverageBuildAction performanceBuildAction = currentBuild.getAction(APICoverageBuildAction.class);
@@ -57,8 +43,8 @@ public class Reports {
 
             double projectFailures = 0.0, projectPercentFailures, projectTotalCalls = 0.0;
             for (Report report : existingReports) {
-                projectFailures = projectFailures + (double)report.getFailures();
-                projectTotalCalls = projectTotalCalls + (double)report.getTotalCalls();
+                projectFailures = projectFailures + (double)report.getStatistics().getFailures();
+                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalCalls();
             }
 
             projectPercentFailures = projectFailures/projectTotalCalls*100.0;
@@ -77,8 +63,8 @@ public class Reports {
 
             double projectPasses = 0.0, projectPercentPasses, projectTotalCalls = 0.0;
             for (Report report : existingReports) {
-                projectPasses = projectPasses + (double)report.getPasses();
-                projectTotalCalls = projectTotalCalls + (double)report.getTotalCalls();
+                projectPasses = projectPasses + (double)report.getStatistics().getPasses();
+                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalCalls();
             }
 
             projectPercentPasses = projectPasses/projectTotalCalls*100.0;
@@ -97,7 +83,7 @@ public class Reports {
 
             long projectFailures = 0;
             for (Report report : existingReports)
-                projectFailures = projectFailures + report.getFailures();
+                projectFailures = projectFailures + report.getStatistics().getFailures();
 
             return projectFailures;
         }
@@ -114,7 +100,7 @@ public class Reports {
 
             long projectPasses = 0;
             for (Report report : existingReports)
-                projectPasses = projectPasses + report.getPasses();
+                projectPasses = projectPasses + report.getStatistics().getPasses();
 
             return projectPasses;
         }
