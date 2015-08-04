@@ -36,7 +36,7 @@ public class Report {
     }
 
     public double getPercentUnhappy() {
-        return this.percentUnhappy;
+        return (double)Math.round(this.percentUnhappy * 100) / 100;
     }
 
     public long getPasses() {
@@ -52,14 +52,15 @@ public class Report {
     }
 
     public double getPercentHappy() {
-        return this.percentHappy;
+        return (double)Math.round(this.percentHappy * 100) / 100;
     }
 
-    public Report getBuildReport(JSONObject jobj_path, String templateString) {
+    public Report getBuildReport(JSONObject jobj_path, String template)
+    {
         Pattern logEntry = Pattern.compile("[^;|\\{|\t|\n|\\s" +
                 "]*->(.*?)[^\\s|\t|\n" +
                 "|;]*");
-        Matcher matchPattern = logEntry.matcher(templateString);
+        Matcher matchPattern = logEntry.matcher(template);
 
         Map<String, HashSet<String>> valid_template_map = new HashMap<String, HashSet<String>>();
         HashSet<String> hs;
@@ -77,6 +78,9 @@ public class Report {
                 valid_template_map.put(str[0], hs);
             }
         }
+
+        System.out.println(valid_template_map);
+
         Map<JSONArray, Long> failure_map = new HashMap<JSONArray, Long>();
         Map<JSONArray, Long> pass_map = new HashMap<JSONArray, Long>();
 

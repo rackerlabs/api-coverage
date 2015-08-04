@@ -15,6 +15,8 @@
     </content>
     <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="net.sourceforge.json:com.springsource.net.sf.json:2.2.2" level="project" />
+    <orderEntry type="library" name="Python 2.7.6 virtualenv at ~/pritiVE interpreter library" level="application" />
     <orderEntry type="library" scope="TEST" name="Maven: org.jenkins-ci.main:jenkins-war:war:1.580.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jenkins-ci.main:jenkins-core:1.580.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.jenkins-ci.plugins.icon-shim:icon-set:1.0.3" level="project" />
@@ -234,7 +236,5 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.codehaus.geb:geb-implicit-assertions:0.7.2" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:servlet-api:2.4" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.9" level="project" />
-    <orderEntry type="library" name="net.sourceforge.json:com.springsource.net.sf.json:2.2.2" level="project" />
-    <orderEntry type="library" name="Python 2.7.6 virtualenv at ~/pritiVE interpreter library" level="application" />
   </component>
 </module>

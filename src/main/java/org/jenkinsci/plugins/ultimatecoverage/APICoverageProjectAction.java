@@ -87,8 +87,9 @@ public class APICoverageProjectAction implements Action {
                     Run<?, ?> build = report.getBuild();
                     if (build != null) {
 
-                        dataSetBuilder.add(report.getPercentHappy(), "hii", new NumberOnlyBuildLabel(build));
-                        dataSetBuilder.add(report.getPercentUnhappy(), "hi", new NumberOnlyBuildLabel(build));
+                        dataSetBuilder.add(report.getPercentHappy(), "Passes", new NumberOnlyBuildLabel(build));
+                        System.out.println(report.getPercentUnhappy());
+                        dataSetBuilder.add(report.getPercentUnhappy(), "Failures", new NumberOnlyBuildLabel(build));
 
                     }
                 }
@@ -115,7 +116,6 @@ public class APICoverageProjectAction implements Action {
 
         protected JFreeChart createGraph() {
             final CategoryDataset dataset = createDataSet().build();
-
             final JFreeChart chart = ChartFactory.createLineChart(graphTitle, // title
                     "Build #", // category axis label
                     "Percentage", // value axis label
@@ -147,6 +147,7 @@ public class APICoverageProjectAction implements Action {
             renderer.setBaseStroke(new BasicStroke(4.0f));
 
             return chart;
+
         }
     }
 }
