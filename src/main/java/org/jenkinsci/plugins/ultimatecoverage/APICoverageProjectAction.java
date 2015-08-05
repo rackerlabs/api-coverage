@@ -75,7 +75,7 @@ public class APICoverageProjectAction implements Action {
     }
 
     private void createGraph(final StaplerRequest request, final StaplerResponse response) throws IOException {
-        final Graph graph = new GraphImpl("Overall Graph") {
+        final Graph graph = new GraphImpl("API Coverage Graph") {
 
             protected DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet() {
                 DataSetBuilder<String, NumberOnlyBuildLabel> dataSetBuilder = new DataSetBuilder<String, NumberOnlyBuildLabel>();
@@ -88,8 +88,8 @@ public class APICoverageProjectAction implements Action {
                     Run<?, ?> build = report.getBuild();
                     if (build != null) {
 
-                        dataSetBuilder.add(report.getStatistics().getPercentHappy(), "Passes", new NumberOnlyBuildLabel(build));
-                        dataSetBuilder.add(report.getStatistics().getPercentUnhappy(), "Failures", new NumberOnlyBuildLabel(build));
+                        dataSetBuilder.add(report.getStatistics().getPercentHappy(), "Positive API Coverage", new NumberOnlyBuildLabel(build));
+                        dataSetBuilder.add(report.getStatistics().getPercentUnhappy(), "Negative API Coverage", new NumberOnlyBuildLabel(build));
 
                     }
                 }
@@ -118,10 +118,10 @@ public class APICoverageProjectAction implements Action {
             final CategoryDataset dataset = createDataSet().build();
             final JFreeChart chart = ChartFactory.createLineChart(graphTitle, // title
                     "Build #", // category axis label
-                    "Percentage", // value axis label
+                    "Percentage %", // value axis label
                     dataset, // data
                     PlotOrientation.VERTICAL, // orientation
-                    false, // include legend
+                    true, // include legend
                     true, // tooltips
                     false // urls
             );

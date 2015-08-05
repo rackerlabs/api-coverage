@@ -1,0 +1,68 @@
+Exploding /Users/prit8976/.m2/repository/org/jenkins-ci/main/jenkins-war/1.580.1/jenkins-war-1.580.1-war-for-test.jar into /Users/prit8976/Documents/ultimate-coverage/./target/jenkins-for-test
+Aug 05, 2015 4:35:49 PM org.mortbay.log.Slf4jLog info
+INFO: Logging to org.slf4j.impl.JDK14LoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+Aug 05, 2015 4:35:49 PM org.mortbay.log.Slf4jLog info
+INFO: jetty-6.1.26
+Aug 05, 2015 4:35:49 PM org.mortbay.log.Slf4jLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Aug 05, 2015 4:35:49 PM org.mortbay.log.Slf4jLog info
+INFO: Started SocketConnector@0.0.0.0:65086
+Aug 05, 2015 4:35:49 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Aug 05, 2015 4:35:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Aug 05, 2015 4:35:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Aug 05, 2015 4:35:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Aug 05, 2015 4:35:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Aug 05, 2015 4:35:54 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Aug 05, 2015 4:35:56 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Aug 05, 2015 4:35:56 PM hudson.UDPBroadcastThread run
+WARNING: UDP handling problem
+java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:319)
+	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:76)
+
+Aug 05, 2015 4:35:56 PM org.mortbay.log.Slf4jLog info
+INFO: jetty-6.1.26
+Aug 05, 2015 4:35:56 PM org.mortbay.log.Slf4jLog info
+INFO: Started SocketConnector@0.0.0.0:65088
+Aug 05, 2015 4:35:57 PM org.mortbay.log.Slf4jLog info
+INFO: Stopped SocketConnector@0.0.0.0:65086
+Aug 05, 2015 4:35:57 PM org.mortbay.log.Slf4jLog info
+INFO: jetty-6.1.26
+Aug 05, 2015 4:35:57 PM org.mortbay.log.Slf4jLog info
+INFO: NO JSP Support for , did not find org.apache.jasper.servlet.JspServlet
+Aug 05, 2015 4:35:57 PM org.mortbay.log.Slf4jLog info
+INFO: Started SocketConnector@0.0.0.0:65090
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started initialization
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Listed all plugins
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Prepared all plugins
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Started all plugins
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Augmented all extensions
+Aug 05, 2015 4:35:57 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Loaded all jobs
+Aug 05, 2015 4:35:58 PM jenkins.InitReactorRunner$1 onAttained
+INFO: Completed initialization
+Aug 05, 2015 4:35:58 PM hudson.UDPBroadcastThread run
+WARNING: UDP handling problem
+java.net.SocketException: Can't assign requested address
+	at java.net.PlainDatagramSocketImpl.join(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.join(AbstractPlainDatagramSocketImpl.java:179)
+	at java.net.MulticastSocket.joinGroup(MulticastSocket.java:319)
+	at hudson.UDPBroadcastThread.run(UDPBroadcastThread.java:76)
+
+=== Starting CliSanityTest.testCliSanity
+Aug 05, 2015 4:35:58 PM org.mortbay.log.Slf4jLog info
+INFO: Stopped SocketConnector@0.0.0.0:65090

@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core">
+    <div>
+        This plugin provides an overview as well as a detailed view of the API Coverage.
+    </div>
+</j:jelly>
