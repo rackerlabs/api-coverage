@@ -3,9 +3,7 @@ package org.jenkinsci.plugins.ultimatecoverage;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,62 +12,76 @@ import java.util.regex.Pattern;
  */
 public class Statistics {
 
-    private long totalCalls;
-    private long failures;
-    private long passes;
+    private long totalPassingCalls;
+    private long totalFailingCalls;
+    private long allPasses;
+    private long allFailures;
+    private long uniqueFailures;
+    private long uniquePasses;
     private double percentHappy;
     private double percentUnhappy;
+    private Map<String, HashSet<String>> nextHopMap;
+    private HashSet<ArrayList> allPassingPaths;
+    private HashSet<ArrayList> allFailingPaths;
+
+    public long getAllPasses() {
+        return allPasses;
+    }
+
+    public long getAllFailures() {
+        return allFailures;
+    }
 
     public double getPercentUnhappy() {
-        return (double)Math.round(this.percentUnhappy * 100) / 100;
+        return (double) Math.round(this.percentUnhappy * 100) / 100;
     }
 
-    public long getPasses() {
-        return this.passes;
+    public long getUniquePasses() {
+        return this.uniquePasses;
     }
 
-    public long getTotalCalls() {
-        return this.totalCalls;
+    public long getTotalPassingCalls() {
+        return this.totalPassingCalls;
     }
 
-    public long getFailures() {
-        return this.failures;
+    public long getTotalFailingCalls() {
+        return totalFailingCalls;
+    }
+
+    public long getUniqueFailures() {
+        return this.uniqueFailures;
     }
 
     public double getPercentHappy() {
-        return (double)Math.round(this.percentHappy * 100) / 100;
+        return (double) Math.round(this.percentHappy * 100) / 100;
     }
 
-    public Map<String, HashSet<String>> getValidTemplateMap(String template) {
+    public void createNextHopMap(String template) {
         Pattern logEntry = Pattern.compile("[^;|\\{|\t|\n|\\s" +
                 "]*->(.*?)[^\\s|\t|\n" +
                 "|;]*");
         Matcher matchPattern = logEntry.matcher(template);
 
-        Map<String, HashSet<String>> valid_template_map = new HashMap<String, HashSet<String>>();
+        nextHopMap = new HashMap<String, HashSet<String>>();
         HashSet<String> hs;
         String[] str;
 
         while (matchPattern.find()) {
             str = matchPattern.group().split("->");
-            if (valid_template_map.containsKey(str[0]))
-                if (valid_template_map.get(str[0]).contains(str[1]))
+            if (nextHopMap.containsKey(str[0]))
+                if (nextHopMap.get(str[0]).contains(str[1]))
                     continue;
-                else valid_template_map.get(str[0]).add(str[1]);
+                else nextHopMap.get(str[0]).add(str[1]);
             else {
                 hs = new HashSet<String>();
                 hs.add(str[1]);
-                valid_template_map.put(str[0], hs);
+                nextHopMap.put(str[0], hs);
             }
         }
-
-        System.out.println(valid_template_map);
-        return valid_template_map;
     }
 
-    public Statistics getStats(JSONObject jobj_path, String template)
-    {
-        Map<String, HashSet<String>> valid_template_map = getValidTemplateMap(template);
+    public Statistics getStatisticsObject(JSONObject jobj_path, String template) {
+        createNextHopMap(template);
 
         Map<JSONArray, Long> failure_map = new HashMap<JSONArray, Long>();
         Map<JSONArray, Long> pass_map = new HashMap<JSONArray, Long>();
@@ -80,12 +92,7 @@ public class Statistics {
         String next_hop;
         HashSet<String> node_map;
 
-        long total_calls = 0;
-        long happy_calls = 0;
-        long unhappy_calls = 0;
-
         for (int j = 0; j < jsonMainArr1.size(); j++) {
-            total_calls++;
 
             jsonMainArr = JSONArray.fromObject(jsonMainArr1.get(j));
 
@@ -93,7 +100,7 @@ public class Statistics {
                 pass = false;
             else {
                 for (int i = 0; i < jsonMainArr.size() - 1; i++) {
-                    node_map = valid_template_map.get(jsonMainArr.get(i));
+                    node_map = nextHopMap.get(jsonMainArr.get(i));
 
                     next_hop = jsonMainArr.getString(i + 1);
 
@@ -108,34 +115,48 @@ public class Statistics {
                 }
             }
             if (pass) {
-                happy_calls++;
+                allPasses++;
                 if (pass_map.containsKey(jsonMainArr))
                     pass_map.put(jsonMainArr, pass_map.get(jsonMainArr) + 1);
-                else
+                else {
+                    uniquePasses++;
                     pass_map.put(jsonMainArr, (long) 1);
+                }
             } else {
-                unhappy_calls++;
+                allFailures++;
                 if (failure_map.containsKey(jsonMainArr))
                     failure_map.put(jsonMainArr, failure_map.get(jsonMainArr) + 1);
-                else
+                else {
+                    uniqueFailures++;
                     failure_map.put(jsonMainArr, (long) 1);
+                }
             }
         }
 
-        System.out.println("failure map: "+failure_map);
-        System.out.println("pass map"+pass_map);
-//        System.out.println("Total Calls: "+total_calls+"\n");
-//        System.out.println("Failure map: "+failure_map+"\n");
-//        System.out.println("Unhappy Calls: "+unhappy_calls+"\n");
-//        System.out.println("Pass map: "+pass_map+"\n");
-//        System.out.println("Happy Calls: "+happy_calls+"\n");
+        allPassingPaths = new HashSet<ArrayList>();
+        allFailingPaths = new HashSet<ArrayList>();
+        getAllPaths("S0", new ArrayList());
 
-        this.failures = unhappy_calls;
-        this.passes = happy_calls;
-        this.totalCalls = total_calls;
-        this.percentHappy = ((double) happy_calls / (double) total_calls) * 100.0;
-        this.percentUnhappy = ((double) unhappy_calls / (double) total_calls) * 100.0;
+        this.percentHappy = ((double) uniquePasses / (double) totalPassingCalls) * 100.0;
+        this.percentUnhappy = ((double) uniqueFailures / (double) totalFailingCalls) * 100.0;
 
         return this;
+    }
+
+    public void getAllPaths(String root, ArrayList path) {
+
+        path.add(root);
+
+        if (nextHopMap.get(root) == null || nextHopMap.get(root).contains(root)) {
+            if (root.equals("SA")) {
+                allPassingPaths.add(path);
+                totalPassingCalls++;
+            } else {
+                allFailingPaths.add(path);
+                totalFailingCalls++;
+            }
+        } else
+            for (String nextHop : nextHopMap.get(root))
+                getAllPaths(nextHop, new ArrayList(path));
     }
 }

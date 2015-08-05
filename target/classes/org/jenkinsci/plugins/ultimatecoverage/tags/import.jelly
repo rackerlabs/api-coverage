@@ -1,6 +1,0 @@
-<j:jelly xmlns:j="jelly:core">
-
-    <script src="http://mdaines.github.io/viz.js/viz.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-</j:jelly>

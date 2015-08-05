@@ -12,20 +12,20 @@
             <h2>Report for Project '${it.ProjectName}' (includes the above shown builds only)</h2>
             <table class="APICoverage">
                 <tr>
-                    <td width="50%">Total Passing API Calls</td>
+                    <td width="50%">Total Positive API Calls</td>
                     <td>${it.totalPass}</td>
                 </tr>
                 <tr>
-                    <td width="50%">Total Failing API Calls</td>
+                    <td width="50%">Total Negative API Calls</td>
                     <td>${it.totalFail}</td>
                 </tr>
                 <tr>
-                    <td width="50%">Percent Fail</td>
-                    <td>${it.percentFail}%</td>
+                    <td width="50%">Positive Path API Coverage</td>
+                    <td>${it.percentPass}%</td>
                 </tr>
                 <tr>
-                    <td width="50%">Percent Pass</td>
-                    <td>${it.percentPass}%</td>
+                    <td width="50%">Negative Path API Coverage</td>
+                    <td>${it.percentFail}%</td>
                 </tr>
             </table>
             </center>

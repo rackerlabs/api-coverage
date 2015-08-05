@@ -43,8 +43,8 @@ public class Reports {
 
             double projectFailures = 0.0, projectPercentFailures, projectTotalCalls = 0.0;
             for (Report report : existingReports) {
-                projectFailures = projectFailures + (double)report.getStatistics().getFailures();
-                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalCalls();
+                projectFailures = projectFailures + (double)report.getStatistics().getUniqueFailures();
+                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalFailingCalls();
             }
 
             projectPercentFailures = projectFailures/projectTotalCalls*100.0;
@@ -63,8 +63,8 @@ public class Reports {
 
             double projectPasses = 0.0, projectPercentPasses, projectTotalCalls = 0.0;
             for (Report report : existingReports) {
-                projectPasses = projectPasses + (double)report.getStatistics().getPasses();
-                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalCalls();
+                projectPasses = projectPasses + (double)report.getStatistics().getUniquePasses();
+                projectTotalCalls = projectTotalCalls + (double)report.getStatistics().getTotalPassingCalls();
             }
 
             projectPercentPasses = projectPasses/projectTotalCalls*100.0;
@@ -83,7 +83,7 @@ public class Reports {
 
             long projectFailures = 0;
             for (Report report : existingReports)
-                projectFailures = projectFailures + report.getStatistics().getFailures();
+                projectFailures = projectFailures + report.getStatistics().getUniqueFailures();
 
             return projectFailures;
         }
@@ -100,7 +100,7 @@ public class Reports {
 
             long projectPasses = 0;
             for (Report report : existingReports)
-                projectPasses = projectPasses + report.getStatistics().getPasses();
+                projectPasses = projectPasses + report.getStatistics().getUniquePasses();
 
             return projectPasses;
         }

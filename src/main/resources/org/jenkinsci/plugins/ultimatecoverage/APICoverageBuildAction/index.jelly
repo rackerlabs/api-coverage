@@ -12,20 +12,20 @@
             <h2>Report for Build #${it.BuildNumber}</h2>
             <table class="APICoverage">
                 <tr>
-                    <td width="50%">Total Passing API Calls</td>
-                    <td>${it.Report.Statistics.passes}</td>
+                    <td width="50%">Total Positive API Calls</td>
+                    <td>${it.Report.Statistics.AllPasses} (${it.Report.Statistics.UniquePasses} Unique)</td>
                 </tr>
                 <tr>
-                    <td width="50%">Total Failing API Calls</td>
-                    <td>${it.Report.Statistics.Failures}</td>
+                    <td width="50%">Total Negative API Calls</td>
+                    <td>${it.Report.Statistics.AllFailures} (${it.Report.Statistics.UniqueFailures} Unique)</td>
                 </tr>
                 <tr>
-                    <td width="50%">Percent Fail</td>
-                    <td>${it.Report.Statistics.PercentUnhappy}%</td>
-                </tr>
-                <tr>
-                    <td width="50%">Percent Pass</td>
+                    <td width="50%">Positive Path API Coverage</td>
                     <td>${it.Report.Statistics.PercentHappy}%</td>
+                </tr>
+                <tr>
+                    <td width="50%">Negative Path API Coverage</td>
+                    <td>${it.Report.Statistics.PercentUnhappy}%</td>
                 </tr>
             </table>
             </center>

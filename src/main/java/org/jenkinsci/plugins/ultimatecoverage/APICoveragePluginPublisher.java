@@ -84,7 +84,7 @@ public class APICoveragePluginPublisher extends Recorder {
 
         Report report = new Report(build.getTimeInMillis(), build);
         Statistics statistics = new Statistics();
-        statistics.getStats(jobj, template);
+        statistics.getStatisticsObject(jobj, template);
 
         report.setStatistics(statistics);
         buildAction.setReport(report);

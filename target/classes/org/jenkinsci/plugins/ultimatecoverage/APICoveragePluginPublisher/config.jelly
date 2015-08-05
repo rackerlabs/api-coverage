@@ -1,9 +1,0 @@
-<?jelly escape-by-default='true'?>
-<j:jelly xmlns:j="jelly:core" xmlns:f="/lib/form">
-  <f:entry title="API Calls File" field="stepsFile">
-    <f:textbox />
-  </f:entry>
-  <f:entry title="Valid API Path Template" field="templateFile">
-    <f:textbox />
-  </f:entry>
-</j:jelly>

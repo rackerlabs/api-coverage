@@ -3,7 +3,7 @@ Group-Id: org.jenkins-ci.plugins
 Short-Name: ultimate-coverage
 Long-Name: Ultimate Coverage
 Url: https://wiki.jenkins-ci.org/display/JENKINS/Ultimate+Coverage
-Plugin-Version: 1.0-SNAPSHOT (private-229839c3-prit8976)
+Plugin-Version: 1.0-SNAPSHOT (private-f9a43933-prit8976)
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
 Plugin-Developers: Priti Changlani:Priti:changlani.priti@ufl.edu
