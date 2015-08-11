@@ -20,7 +20,33 @@ public class Statistics {
     private long uniquePasses;
     private double percentHappy;
     private double percentUnhappy;
+
+    public Map<String, HashSet<String>> getNextHopMap() {
+        return nextHopMap;
+    }
+
+    public void setNextHopMap(Map<String, HashSet<String>> nextHopMap) {
+        this.nextHopMap = nextHopMap;
+    }
+
     private Map<String, HashSet<String>> nextHopMap;
+
+    public HashSet<ArrayList> getAllPassingPaths() {
+        return allPassingPaths;
+    }
+
+    public HashSet<ArrayList> getAllFailingPaths() {
+        return allFailingPaths;
+    }
+
+    public void setAllPassingPaths(HashSet<ArrayList> allPassingPaths) {
+        this.allPassingPaths = allPassingPaths;
+    }
+
+    public void setAllFailingPaths(HashSet<ArrayList> allFailingPaths) {
+        this.allFailingPaths = allFailingPaths;
+    }
+
     private HashSet<ArrayList> allPassingPaths;
     private HashSet<ArrayList> allFailingPaths;
 
@@ -33,7 +59,7 @@ public class Statistics {
     }
 
     public double getPercentUnhappy() {
-        return (double) Math.round(this.percentUnhappy * 100) / 100;
+        return Math.round(this.percentUnhappy * 100) / 100;
     }
 
     public long getUniquePasses() {
@@ -53,10 +79,11 @@ public class Statistics {
     }
 
     public double getPercentHappy() {
-        return (double) Math.round(this.percentHappy * 100) / 100;
+        return Math.round(this.percentHappy * 100) / 100;
     }
 
     public void createNextHopMap(String template) {
+
         Pattern logEntry = Pattern.compile("[^;|\\{|\t|\n|\\s" +
                 "]*->(.*?)[^\\s|\t|\n" +
                 "|;]*");
@@ -68,6 +95,8 @@ public class Statistics {
 
         while (matchPattern.find()) {
             str = matchPattern.group().split("->");
+            str[0] = str[0].trim();
+            str[1] = str[1].trim();
             if (nextHopMap.containsKey(str[0]))
                 if (nextHopMap.get(str[0]).contains(str[1]))
                     continue;
@@ -135,6 +164,7 @@ public class Statistics {
 
         allPassingPaths = new HashSet<ArrayList>();
         allFailingPaths = new HashSet<ArrayList>();
+
         getAllPaths("S0", new ArrayList());
 
         this.percentHappy = ((double) uniquePasses / (double) totalPassingCalls) * 100.0;
@@ -159,4 +189,6 @@ public class Statistics {
             for (String nextHop : nextHopMap.get(root))
                 getAllPaths(nextHop, new ArrayList(path));
     }
+
+
 }

@@ -1,0 +1,35 @@
+commit cc76042fd68d77f48d3f207b739fac9dcdb703fc
+tree 490a44bd22df22353ffa5c2727df0e326e38d67b
+parent 875a7cc3ef4e819953006e57892f2adf5b2d136a
+author Priti Changlani <changlani.priti@gmail.com> 1439323264 -0500
+committer Priti Changlani <changlani.priti@gmail.com> 1439323264 -0500
+
+    template file corrected
+
+:100644 100644 3ab1c7e95b67faabd517ec36dfb31af88a6dd4fd 8b309abeaaa93065cf12289496b02a3290dad5e2 M	.idea/workspace.xml
+:100644 100644 6dc52aeb874feff4f84bda7b355c163401600d88 eac9567e64f7e812098ecf165055531b13f37fc2 M	src/exampleproject.java
+
+commit 875a7cc3ef4e819953006e57892f2adf5b2d136a
+tree 197b6defc0c6adc3c978893406e8fdcf787174a5
+parent c20b852870e14c4227d46b605bbdec883af0c4c9
+author Priti Changlani <changlani.priti@gmail.com> 1439323142 -0500
+committer Priti Changlani <changlani.priti@gmail.com> 1439323142 -0500
+
+    template file added
+
+:100644 100644 8a543658e57574589271f8d8529075fc48d84ad4 3ab1c7e95b67faabd517ec36dfb31af88a6dd4fd M	.idea/workspace.xml
+:100644 100644 30c4ddf4353fa84426cffc31594ec78a510d1b55 6dc52aeb874feff4f84bda7b355c163401600d88 M	src/exampleproject.java
+
+commit c20b852870e14c4227d46b605bbdec883af0c4c9
+tree 293c7d5d377ece4dbdabf5875ee16b488aa8c6de
+parent 159988d9cda17cf96936fa5f3fa5be1a297d20df
+author Priti Changlani <changlani.priti@gmail.com> 1439323036 -0500
+committer Priti Changlani <changlani.priti@gmail.com> 1439323036 -0500
+
+    path file reverted
+
+:100644 100644 fafb97d765c2e2521f02207463c603036ac9f06c 8a543658e57574589271f8d8529075fc48d84ad4 M	.idea/workspace.xml
+:100644 100644 23e74d19a5a6922b0e19b68461bbdd71f47abef2 beead6aff202ce18768fe8a8adbdcd69923fcd4e M	out/production/Example Project/exampleproject.class
+:100644 100644 796393164eff99faa9f4ed8cc027396861017fd8 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 M	path.json
+:100644 100644 e466c13c37adce5aee33b0e83ca0f4aeea26acc8 30c4ddf4353fa84426cffc31594ec78a510d1b55 M	src/exampleproject.java
+:100644 100644 823b5484be4dcb36be7011b84e080dc9bfb8bf3a 8b137891791fe96927ad78e64b0aad7bded08bdc M	template.json

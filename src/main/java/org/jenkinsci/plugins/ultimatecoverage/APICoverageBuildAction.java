@@ -14,6 +14,9 @@ public class APICoverageBuildAction implements Action, Serializable {
     private String template;
     private AbstractBuild<?, ?> build;
     private Report report;
+    private String displayName = "API Coverage Build Report";
+    private String iconFileName = "/plugin/ultimate-coverage/img/image.png";
+    private String urlName = "BuildReport";
 
     public Report getReport() {
         return report;
@@ -27,17 +30,17 @@ public class APICoverageBuildAction implements Action, Serializable {
 
     @Override
     public String getIconFileName() {
-        return "/plugin/ultimate-coverage/img/image.png";
+        return iconFileName;
     }
 
     @Override
     public String getDisplayName() {
-        return "API Coverage Build Report";
+        return displayName;
     }
 
     @Override
     public String getUrlName() {
-        return "BuildReport";
+        return urlName;
     }
 
     public APICoverageBuildAction(final AbstractBuild<?, ?> build, final String path_str, final String template) {

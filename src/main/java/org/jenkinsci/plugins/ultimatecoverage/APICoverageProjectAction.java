@@ -27,24 +27,29 @@ import java.util.List;
 public class APICoverageProjectAction implements Action {
     private AbstractProject<?, ?> project;
     Reports reports;
+    private String displayName = "API Coverage Project Report";
+    private String iconFileName = "/plugin/ultimate-coverage/img/line_chart_icon.jpg";
+    private String urlName = "ProjectReport";
 
     public AbstractProject<?, ?> getProject() {
         return this.project;
     }
 
-    public String getProjectName() {return this.project.getName();}
+    public String getProjectName() {
+        return this.project.getName();
+    }
 
     @Override
     public String getIconFileName() {
-        return "/plugin/ultimate-coverage/img/line_chart_icon.jpg";
+        return iconFileName;
     }
 
     public String getDisplayName() {
-        return "API Coverage Project Report";
+        return displayName;
     }
 
     public String getUrlName() {
-        return "ProjectReport";
+        return urlName;
     }
 
     public String getPercentFail() {
@@ -74,7 +79,8 @@ public class APICoverageProjectAction implements Action {
         this.project = project;
     }
 
-    private void createGraph(final StaplerRequest request, final StaplerResponse response) throws IOException {
+    private void createGraph(final StaplerRequest request, final StaplerResponse response) throws IOException
+    {
         final Graph graph = new GraphImpl("API Coverage Graph") {
 
             protected DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet() {
@@ -104,17 +110,19 @@ public class APICoverageProjectAction implements Action {
         createGraph(request, response);
     }
 
-    private abstract class GraphImpl extends Graph {
+    private abstract class GraphImpl extends Graph
+    {
         private final String graphTitle;
+        protected abstract DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet();
 
-        protected GraphImpl(final String graphName) {
+        protected GraphImpl(final String graphName)
+        {
             super(-1, 400, 400);
             this.graphTitle = graphName;
         }
 
-        protected abstract DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet();
-
-        protected JFreeChart createGraph() {
+        protected JFreeChart createGraph()
+        {
             final CategoryDataset dataset = createDataSet().build();
             final JFreeChart chart = ChartFactory.createLineChart(graphTitle, // title
                     "Build #", // category axis label

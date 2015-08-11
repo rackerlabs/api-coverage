@@ -1,0 +1,8 @@
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e12_a_admin","SA"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e12_a_admin","SA"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e12_a_admin","SA"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","d58e4MF_a_admin",]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_observer","d58e4_a_observer","d58e5_a_observer","SA"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_observer","d58e4_a_observer","d58e5_a_observer","SA"]}
+2015-07-10 11:47:42,799 14351 [qtp2099285235-67] INFO  api-coverage-logger - {"steps":["S0","S0_a_admin","d58e4_a_admin","fail"]}

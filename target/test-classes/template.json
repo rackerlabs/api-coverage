@@ -1,0 +1,89 @@
+digraph Checker { rankdir=LR; fontname="Helvetica"; labelloc=b;
+
+node [fontname="Helvetica", shape=ellipse, style=filled,fillcolor="#EEEEEE"]
+
+{
+rank=source
+REAL_START
+}
+{
+rank=same
+S0
+}
+{
+REAL_START->S0
+S0->d57e11 [label="U (v1)"];
+S0->d57e52 [label="M (GET)"];
+S0->w44aM [label="M!(GET)"];
+S0->w44aU [label="U!(v1)"];
+d57e11->d57e18 [label="U (assemblies)"];
+d57e11->d57e70 [label="U (language_packs)"];
+d57e11->d57e122 [label="U (plans)"];
+d57e11->d57e155 [label="U (triggers)"];
+d57e11->d57e52 [label="M (GET)"];
+d57e11->w44aM [label="M!(GET)"];
+d57e11->w44aU [label="U!(assemblies|language_packs|plans|triggers)"];
+d57e18->d57e31 [label="U (.*)"];
+d57e18->d57e52 [label="M (GET)"];
+d57e18->d57e25 [label="M (POST)"];
+d57e18->w44aM [label="M!(GET|POST)"];
+d57e31->d57e51 [label="U (logs)"];
+d57e31->d57e52 [label="M (GET)"];
+d57e31->d57e58 [label="M (PUT)"];
+d57e31->d57e64 [label="M (DELETE)"];
+d57e31->w44aM [label="M!(DELETE|GET|PUT)"];
+d57e31->w44aU [label="U!(logs)"];
+d57e51->d57e52 [label="M (GET)"];
+d57e51->d57e58 [label="M (PUT)"];
+d57e51->d57e64 [label="M (DELETE)"];
+d57e51->w44aM [label="M!(DELETE|GET|PUT)"];
+d57e51->w44aU [label="U(.*)"];
+d57e52->SA [label="ÃŽÂµ"];
+d57e58->SA [label="ÃŽÂµ"];
+d57e64->SA [label="ÃŽÂµ"];
+d57e25->SA [label="ÃŽÂµ"];
+d57e70->d57e31 [label="U (.*)"];
+d57e70->d57e52 [label="M (GET)"];
+d57e70->d57e25 [label="M (POST)"];
+d57e70->w44aM [label="M!(GET|POST)"];
+d57e122->d57e135 [label="U (.*)"];
+d57e122->d57e52 [label="M (GET)"];
+d57e122->d57e25 [label="M (POST)"];
+d57e122->w44aM [label="M!(GET|POST)"];
+d57e135->d57e52 [label="M (GET)"];
+d57e135->d57e58 [label="M (PUT)"];
+d57e135->d57e64 [label="M (DELETE)"];
+d57e135->w44aM [label="M!(DELETE|GET|PUT)"];
+d57e135->w44aU [label="U(.*)"];
+d57e155->d57e156 [label="U (.*)"];
+d57e155->w44aM [label="M(.*)"];
+d57e156->d57e25 [label="M (POST)"];
+d57e156->w44aM [label="M!(POST)"];
+d57e156->w44aU [label="U(.*)"];
+w44aU->w44aU [label="U(.*)", tailport=n, headport=ne]
+w44aU->w44aU [label="M(.*)", tailport=s, headport=sw]
+}
+
+//Nodes
+
+REAL_START[style=invis]
+S0[label="S0", fillcolor="white"]
+SA[label="SA", shape=doublecircle, fillcolor="white"]
+d57e11[label="d57e11", fillcolor="yellowgreen"]
+d57e18[label="d57e18", fillcolor="yellowgreen"]
+d57e31[label="d57e31", fillcolor="yellowgreen"]
+d57e51[label="d57e51", fillcolor="yellowgreen"]
+d57e52[label="d57e52"]
+d57e58[label="d57e58"]
+d57e64[label="d57e64"]
+d57e25[label="d57e25"]
+d57e70[label="d57e70", fillcolor="yellowgreen"]
+d57e122[label="d57e122", fillcolor="yellowgreen"]
+d57e135[label="d57e135", fillcolor="yellowgreen"]
+d57e155[label="d57e155", fillcolor="yellowgreen"]
+d57e156[label="d57e156", fillcolor="yellowgreen"]
+w44aM[label="w44aM", fillcolor="salmon", shape="doublecircle"]
+w44aU[label="w44aU", fillcolor="salmon3", shape="doublecircle"]
+w44aC[label="w44aC", fillcolor="salmon3", shape="doublecircle"]
+w44aR[label="w44aR", fillcolor="salmon3", shape="doublecircle"]
+}

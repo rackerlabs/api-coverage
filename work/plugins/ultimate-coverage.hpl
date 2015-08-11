@@ -3,11 +3,15 @@ Group-Id: org.jenkins-ci.plugins
 Short-Name: ultimate-coverage
 Long-Name: Ultimate Coverage
 Url: https://wiki.jenkins-ci.org/display/JENKINS/Ultimate+Coverage
-Plugin-Version: 1.0-SNAPSHOT (private-f48bdea9-prit8976)
+Plugin-Version: 1.0-SNAPSHOT (private-9ac3d08a-prit8976)
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
 Plugin-Developers: Priti Changlani:Priti:changlani.priti@ufl.edu
-Libraries: /Users/prit8976/Documents/ultimate-coverage/target/classes
+Libraries: /Users/prit8976/Documents/ultimate-coverage/target/classes,
+ /Users/prit8976/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcres
+ t-core-1.3.jar,/Users/prit8976/.m2/repository/junit/junit/4.12/junit-
+ 4.12.jar,/Users/prit8976/.m2/repository/org/codehaus/groovy/groovy-al
+ l/2.4.4/groovy-all-2.4.4.jar
 Resource-Path: /Users/prit8976/Documents/ultimate-coverage/src/main/we
  bapp
 

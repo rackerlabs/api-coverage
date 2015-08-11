@@ -3,10 +3,7 @@ package org.jenkinsci.plugins.ultimatecoverage;
 import hudson.Extension;
 import hudson.FilePath;
 import hudson.Launcher;
-import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
-import hudson.model.Action;
-import hudson.model.BuildListener;
+import hudson.model.*;
 import hudson.tasks.BuildStepDescriptor;
 import hudson.tasks.BuildStepMonitor;
 import hudson.tasks.Publisher;
@@ -42,22 +39,23 @@ public class APICoveragePluginPublisher extends Recorder {
     public String getTemplateFile() {return this.templateFile;}
 
     @Override
-    public boolean perform(final AbstractBuild build, Launcher launcher, BuildListener listener) {
+    public boolean perform(final AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException {
         FilePath fp_path = new FilePath(build.getWorkspace(), getStepsFile());
         FilePath fp_template = new FilePath(build.getWorkspace(), getTemplateFile());
 
-        String jsonData_path = null, template = null;
+        String jsonData_path, template;
 
         try {
             jsonData_path = fp_path.readToString();
             template = fp_template.readToString();
         } catch (FileNotFoundException e) {
-            System.out.println("The user entered file name does not exist in the workspace. ");
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            build.setResult(hudson.model.Result.FAILURE);
+            throw e;
+        }
+
+        if (template.length() == 0 || template == null) {
+            build.setResult(hudson.model.Result.FAILURE);
+            throw new IOException("The template file has no content.");
         }
 
         Pattern logEntry1 = Pattern.compile("\\[\"(.*?)\"\\]");
@@ -65,7 +63,7 @@ public class APICoveragePluginPublisher extends Recorder {
 
         JSONArray jArray = new JSONArray();
         String temp;
-        String path_str="";
+        String path_str = "";
 
         while (matchPattern1.find()) {
             temp = matchPattern1.group();
@@ -104,6 +102,7 @@ public class APICoveragePluginPublisher extends Recorder {
 
     @Override
     public Action getProjectAction(AbstractProject<?, ?> project) {
+        System.out.println(project.getFullDisplayName());
         return new APICoverageProjectAction(project);
     }
 
