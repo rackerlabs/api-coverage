@@ -12,7 +12,7 @@
           <string>refs/remotes/origin/master</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@1.17.1">
-              <sha1>cc76042fd68d77f48d3f207b739fac9dcdb703fc</sha1>
+              <sha1>d8e35429bb73f5a17d69f9259e57a380a78ea013</sha1>
               <branches class="list">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -21,7 +21,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>198</hudsonBuildNumber>
+            <hudsonBuildNumber>203</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -43,6 +43,10 @@
     <org.jenkinsci.plugins.apicoverage.APICoverageBuildAction plugin="api-coverage@1.0.0">
       <steps>{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e122&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e25&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
@@ -55,6 +59,8 @@
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e18&quot;,&quot;d57e31&quot;,&quot;d57e64&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
+{&quot;steps&quot;:[&quot;S0&quot;,&quot;w44aU&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e122&quot;,&quot;d57e135&quot;,&quot;d57e52&quot;,&quot;SA&quot;]}
 {&quot;steps&quot;:[&quot;S0&quot;,&quot;d57e11&quot;,&quot;d57e122&quot;,&quot;d57e135&quot;,&quot;d57e64&quot;,&quot;SA&quot;]}</steps>
       <template>digraph Checker { rankdir=LR; fontname=&quot;Helvetica&quot;; labelloc=b;
@@ -150,17 +156,17 @@ w44aR[label=&quot;w44aR&quot;, fillcolor=&quot;salmon3&quot;, shape=&quot;double
 </template>
       <build class="build" reference="../../.."/>
       <report>
-        <timestamp>1439497166227</timestamp>
+        <timestamp>1439507588391</timestamp>
         <build class="build" reference="../../../.."/>
         <statistics>
           <totalPassingCalls>24</totalPassingCalls>
           <totalFailingCalls>20</totalFailingCalls>
-          <allPasses>16</allPasses>
-          <allFailures>0</allFailures>
-          <uniqueFailures>0</uniqueFailures>
-          <uniquePasses>6</uniquePasses>
-          <percentHappy>25.0</percentHappy>
-          <percentUnhappy>0.0</percentUnhappy>
+          <allPasses>21</allPasses>
+          <allFailures>1</allFailures>
+          <uniqueFailures>1</uniqueFailures>
+          <uniquePasses>7</uniquePasses>
+          <percentHappy>29.166666666666668</percentHappy>
+          <percentUnhappy>5.0</percentUnhappy>
           <nextHopMap>
             <entry>
               <string>d57e64</string>
@@ -621,10 +627,10 @@ w44aR[label=&quot;w44aR&quot;, fillcolor=&quot;salmon3&quot;, shape=&quot;double
       <urlName>BuildReport</urlName>
     </org.jenkinsci.plugins.apicoverage.APICoverageBuildAction>
   </actions>
-  <number>198</number>
-  <startTime>1439497166229</startTime>
+  <number>203</number>
+  <startTime>1439507588394</startTime>
   <result>SUCCESS</result>
-  <duration>2597</duration>
+  <duration>1445</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <builtOn></builtOn>

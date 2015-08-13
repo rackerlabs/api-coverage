@@ -9,6 +9,7 @@ import hudson.util.Graph;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.labels.StandardCategoryItemLabelGenerator;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.LineAndShapeRenderer;
@@ -18,7 +19,6 @@ import org.kohsuke.stapler.StaplerResponse;
 
 import java.awt.*;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.List;
 
 /**
@@ -52,23 +52,21 @@ public class APICoverageProjectAction implements Action {
         return urlName;
     }
 
-    public String getPercentFail() {
-        DecimalFormat df = new DecimalFormat("#.##");
-        return df.format(reports.getPercentFailForProject(getProject()));
-    }
-
-    public String getPercentPass() {
-        DecimalFormat df = new DecimalFormat("#.##");
-        return df.format(reports.getPercentPassForProject(getProject()));
-    }
-
-    public long getTotalPass() {
-        return reports.getTotalPassCallsForProject(getProject());
-    }
-
-    public long getTotalFail() {
-        return reports.getTotalFailCallsForProject(getProject());
-    }
+//    public double getPercentFail() {
+//        return Math.round(reports.getPercentFailForProject(getProject()) * 100.0)/100.0;
+//    }
+//
+//    public double getPercentPass() {
+//        return Math.round(reports.getPercentPassForProject(getProject()) * 100.0)/100.0;
+//    }
+//
+//    public long getTotalPass() {
+//        return reports.getTotalPassCallsForProject(getProject());
+//    }
+//
+//    public long getTotalFail() {
+//        return reports.getTotalFailCallsForProject(getProject());
+//    }
 
     public APICoverageProjectAction(final AbstractProject<?, ?> project) {
         System.out.println("in APICoverageProjectAction's constructor");
@@ -78,38 +76,33 @@ public class APICoverageProjectAction implements Action {
 
     private void createGraph(final StaplerRequest request, final StaplerResponse response) throws IOException
     {
-        final Graph graph = new GraphImpl("API Coverage Graph")
-        {
-            protected DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet()
-            {
-                DataSetBuilder<String, NumberOnlyBuildLabel> dataSetBuilder = new DataSetBuilder<String, NumberOnlyBuildLabel>();
-
-                List<Report> ExistingReports = reports.getExistingReportsList(getProject());
-
-                for (Report report : ExistingReports) {
-                    Run<?, ?> build = report.getBuild();
-                    if (build != null)
-                    {
-                        dataSetBuilder.add(report.getStatistics().getPercentHappy(), "Positive API Coverage", new NumberOnlyBuildLabel(build));
-                        dataSetBuilder.add(report.getStatistics().getPercentUnhappy(), "Negative API Coverage", new NumberOnlyBuildLabel(build));
-                    }
-                }
-                return dataSetBuilder;
-            }
-        };
-
-        graph.doPng(request, response);
+        new GraphImpl("API Coverage Graph").doPng(request, response);
     }
 
     public void doProjectGraph(final StaplerRequest request, final StaplerResponse response) throws IOException {
         createGraph(request, response);
     }
 
-    private abstract class GraphImpl extends Graph
+    private class GraphImpl extends Graph
     {
         private final String graphTitle;
 
-        protected abstract DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet();
+        protected DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet()
+        {
+            DataSetBuilder<String, NumberOnlyBuildLabel> dataSetBuilder = new DataSetBuilder<String, NumberOnlyBuildLabel>();
+
+            List<Report> ExistingReports = reports.getExistingReportsList(getProject());
+
+            for (Report report : ExistingReports) {
+                Run<?, ?> build = report.getBuild();
+                if (build != null)
+                {
+                    dataSetBuilder.add(report.getStatistics().getPercentHappy(), "Positive API Coverage", new NumberOnlyBuildLabel(build));
+                    dataSetBuilder.add(report.getStatistics().getPercentUnhappy(), "Negative API Coverage", new NumberOnlyBuildLabel(build));
+                }
+            }
+            return dataSetBuilder;
+        }
 
         protected GraphImpl(final String graphName)
         {
@@ -148,11 +141,15 @@ public class APICoverageProjectAction implements Action {
 
             renderer.setSeriesPaint(0, Color.red);
             renderer.setSeriesPaint(1, Color.green);
+            renderer.setBaseShapesVisible(true);
+            //renderer.setSeriesShapesVisible(true);
+            //renderer.setBaseItemLabelGenerator(new CustomLabelGenerator());
+            renderer.setBaseItemLabelsVisible(Boolean.TRUE);
+            renderer.setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator());
 
-            renderer.setBaseStroke(new BasicStroke(4.0f));
+            renderer.setBaseStroke(new BasicStroke(2.0f));
 
             return chart;
-
         }
     }
 }

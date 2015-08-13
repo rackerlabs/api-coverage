@@ -8,11 +8,11 @@ Fetching upstream changes from https://github.com/pritic/Example-Project.git
  > git -c core.askpass=true fetch --tags --progress https://github.com/pritic/Example-Project.git +refs/heads/*:refs/remotes/origin/*
  > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
  > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
-Checking out Revision cc76042fd68d77f48d3f207b739fac9dcdb703fc (refs/remotes/origin/master)
+Checking out Revision d8e35429bb73f5a17d69f9259e57a380a78ea013 (refs/remotes/origin/master)
  > git config core.sparsecheckout # timeout=10
- > git checkout -f cc76042fd68d77f48d3f207b739fac9dcdb703fc
- > git rev-list cc76042fd68d77f48d3f207b739fac9dcdb703fc # timeout=10
-[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson6649721917798537465.sh
+ > git checkout -f d8e35429bb73f5a17d69f9259e57a380a78ea013
+ > git rev-list d8e35429bb73f5a17d69f9259e57a380a78ea013 # timeout=10
+[workspace] $ /bin/sh -xe /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson7754378847954485778.sh
 + cd src
 + javac exampleproject.java
 + java exampleproject

@@ -8,8 +8,8 @@ Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
 Plugin-Developers: Priti Changlani:Priti:changlani.priti@ufl.edu
 Libraries: /Users/prit8976/Documents/api-coverage/target/classes,/User
- s/prit8976/.m2/repository/junit/junit/4.12/junit-4.12.jar,/Users/prit
- 8976/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.
+ s/prit8976/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-cor
+ e-1.3.jar,/Users/prit8976/.m2/repository/junit/junit/4.12/junit-4.12.
  jar
 Resource-Path: /Users/prit8976/Documents/api-coverage/src/main/webapp
 

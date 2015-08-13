@@ -57,7 +57,7 @@ public class Statistics {
     }
 
     public double getPercentUnhappy() {
-        return Math.round(this.percentUnhappy * 100) / 100;
+        return Math.round(this.percentUnhappy*100.0)/100.0;
     }
 
     public long getUniquePasses() {
@@ -77,7 +77,7 @@ public class Statistics {
     }
 
     public double getPercentHappy() {
-        return Math.round(this.percentHappy * 100) / 100;
+        return Math.round(this.percentHappy*100.0)/100.0;
     }
 
     public void createNextHopMap(String template) {
@@ -187,6 +187,4 @@ public class Statistics {
             for (String nextHop : nextHopMap.get(root))
                 getAllPaths(nextHop, new ArrayList(path));
     }
-
-
 }
