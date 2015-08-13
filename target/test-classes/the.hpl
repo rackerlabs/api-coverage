@@ -1,17 +1,16 @@
 Manifest-Version: 1.0
 Group-Id: org.jenkins-ci.plugins
-Short-Name: ultimate-coverage
-Long-Name: Ultimate Coverage
-Url: https://wiki.jenkins-ci.org/display/JENKINS/Ultimate+Coverage
-Plugin-Version: 1.0-SNAPSHOT (private-9ac3d08a-prit8976)
+Short-Name: api-coverage
+Long-Name: API Coverage
+Url: https://wiki.jenkins-ci.org/display/JENKINS/API+Coverage
+Plugin-Version: 1.0.0
 Hudson-Version: 1.580.1
 Jenkins-Version: 1.580.1
 Plugin-Developers: Priti Changlani:Priti:changlani.priti@ufl.edu
-Libraries: /Users/prit8976/Documents/ultimate-coverage/target/classes,
- /Users/prit8976/.m2/repository/org/codehaus/groovy/groovy-all/2.4.4/g
- roovy-all-2.4.4.jar,/Users/prit8976/.m2/repository/junit/junit/4.12/j
- unit-4.12.jar,/Users/prit8976/.m2/repository/org/hamcrest/hamcrest-co
- re/1.3/hamcrest-core-1.3.jar
-Resource-Path: /Users/prit8976/Documents/ultimate-coverage/src/main/we
- bapp
+Libraries: /Users/prit8976/Documents/api-coverage/target/classes,/User
+ s/prit8976/.m2/repository/org/codehaus/groovy/groovy-all/2.4.4/groovy
+ -all-2.4.4.jar,/Users/prit8976/.m2/repository/junit/junit/4.12/junit-
+ 4.12.jar,/Users/prit8976/.m2/repository/org/hamcrest/hamcrest-core/1.
+ 3/hamcrest-core-1.3.jar
+Resource-Path: /Users/prit8976/Documents/api-coverage/src/main/webapp
 

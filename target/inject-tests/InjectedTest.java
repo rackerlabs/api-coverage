@@ -7,10 +7,10 @@ import java.util.*;
 public class InjectedTest extends junit.framework.TestCase {
   public static junit.framework.Test suite() throws Exception {
     Map parameters = new HashMap();
-    parameters.put("basedir","/Users/prit8976/Documents/ultimate-coverage");
-    parameters.put("artifactId","ultimate-coverage");
-    parameters.put("outputDirectory","/Users/prit8976/Documents/ultimate-coverage/target/classes");
-    parameters.put("testOutputDirectory","/Users/prit8976/Documents/ultimate-coverage/target/test-classes");
+    parameters.put("basedir","/Users/prit8976/Documents/api-coverage");
+    parameters.put("artifactId","api-coverage");
+    parameters.put("outputDirectory","/Users/prit8976/Documents/api-coverage/target/classes");
+    parameters.put("testOutputDirectory","/Users/prit8976/Documents/api-coverage/target/test-classes");
     parameters.put("requirePI","false");
     return new org.jvnet.hudson.test.PluginAutomaticTestBuilder().build(parameters);
   }

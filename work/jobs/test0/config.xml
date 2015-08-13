@@ -40,15 +40,15 @@ java exampleproject
 cd ..
 rm path.json
 rm template.json
-cp /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace/src/path.json .
-cp /Users/prit8976/Documents/ultimate-coverage/work/jobs/test0/workspace/src/template.json .</command>
+cp /Users/prit8976/Documents/api-coverage/work/jobs/test0/workspace/src/path.json .
+cp /Users/prit8976/Documents/api-coverage/work/jobs/test0/workspace/src/template.json .</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
-    <org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher plugin="ultimate-coverage@1.0-SNAPSHOT">
+    <org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher plugin="api-coverage@1.0.0">
       <templateFile>template.json</templateFile>
       <stepsFile>path.json</stepsFile>
-    </org.jenkinsci.plugins.ultimatecoverage.APICoveragePluginPublisher>
+    </org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher>
   </publishers>
   <buildWrappers/>
 </project>

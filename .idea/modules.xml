@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ultimate-coverage.iml" filepath="$PROJECT_DIR$/ultimate-coverage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-coverage.iml" filepath="$PROJECT_DIR$/api-coverage.iml" />
     </modules>
   </component>
 </project>

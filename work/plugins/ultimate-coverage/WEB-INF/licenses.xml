@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<l:dependencies xmlns:l='licenses' groupId='org.jenkins-ci.plugins' artifactId='ultimate-coverage' version='1.0-SNAPSHOT'><l:dependency name='Ultimate Coverage' groupId='org.jenkins-ci.plugins' artifactId='ultimate-coverage' version='1.0-SNAPSHOT' url='https://wiki.jenkins-ci.org/display/JENKINS/Ultimate+Coverage'><l:description>Plugin for ultimate code coverage</l:description><l:license name='MIT License' url='http://opensource.org/licenses/MIT'/></l:dependency></l:dependencies>

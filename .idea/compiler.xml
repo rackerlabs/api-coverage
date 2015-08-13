@@ -24,8 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="ultimate-coverage" />
       </profile>
+      <profile default="false" name="Annotation profile for api-coverage" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="api-coverage" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-coverage" target="1.6" />
       <module name="ultimate-coverage" target="1.6" />
     </bytecodeTargetLevel>
   </component>
