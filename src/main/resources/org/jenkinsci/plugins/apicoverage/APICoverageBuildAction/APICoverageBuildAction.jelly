@@ -60,15 +60,19 @@
                         if (pathInGraph[0] !== undefined) {
                             //get step. color it blue
                             var path = pathInGraph[0].nextElementSibling;
-                            path.setAttribute('stroke', 'purple');
-                            console.log('stroke', path.getAttribute('stroke-width'));
                             if (path.getAttribute('stroke-width') == null) {
                                 console.log('stroke width is empty');
                                 path.setAttribute('stroke-width', '1');
-                            } else {
+                                var color = path.getAttribute('stroke');
+                                path.setAttribute('stroke', "rgb(255,153,51)");
+                                console.log('stroke', path.getAttribute('stroke'));
+                            } else if(parseInt(path.getAttribute('stroke-width')) &lt; 10){
                                 var width = parseInt(path.getAttribute('stroke-width')) + 1
                                 console.log('stroke width', width);
                                 path.setAttribute('stroke-width', width + "");
+                                var color = path.getAttribute('stroke');
+                                path.setAttribute('stroke', incrementColor(color));
+                                console.log('stroke', path.getAttribute('stroke'));
                             }
                         }
                     }
@@ -85,6 +89,24 @@
         } catch (e) {
             return inspect(e.toString());
         }
+    }
+
+    function incrementColor(rgb){
+        var mycolors = rgb.slice(4,-1).split(',');
+        var newColor = "";
+        var r = parseInt(mycolors[0]);
+        var g = parseInt(mycolors[1]);
+        var b = parseInt(mycolors[2]);
+        if (r > 0 &amp;&amp; r >= g){
+        newColor = "rgb(" + (r-1) + "," + g + "," + b + ")";
+        } else if(g > 0 &amp;&amp; g >= b) {
+        newColor = "rgb(" + r + "," + (g - 1) + "," + b + ")";
+        } else if(b > 0) {
+        newColor = "rgb(" + r + "," + g + "," + (b - 1) + ")";
+        } else {
+        newColor = "rgb(0,0,0)";
+        }
+        return newColor;
     }
 
     function inspect(s) {

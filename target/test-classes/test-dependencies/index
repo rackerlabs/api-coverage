@@ -1,9 +1,9 @@
-maven-plugin
-antisamy-markup-formatter
+ant
 matrix-auth
-subversion
-matrix-project
-javadoc
+antisamy-markup-formatter
 mailer
 junit
-ant
+matrix-project
+maven-plugin
+subversion
+javadoc

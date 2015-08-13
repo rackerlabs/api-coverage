@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="13.466" tests="4" errors="0" skipped="0" failures="0">
+<testsuite name="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="19.885" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib"/>
@@ -61,8 +61,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testEmptyFileException" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="8.52"/>
-  <testcase name="testBuildActionCreated" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="3.497"/>
-  <testcase name="testTemplateFileNotInWorkspace" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="0.963"/>
-  <testcase name="testPathFileNotInWorkspace" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="0.486"/>
+  <testcase name="testEmptyFileException" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="12.999"/>
+  <testcase name="testBuildActionCreated" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="4.577"/>
+  <testcase name="testTemplateFileNotInWorkspace" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="1.431"/>
+  <testcase name="testPathFileNotInWorkspace" classname="org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest" time="0.878"/>
 </testsuite>

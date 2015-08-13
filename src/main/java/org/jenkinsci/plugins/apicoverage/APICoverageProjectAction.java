@@ -83,7 +83,7 @@ public class APICoverageProjectAction implements Action {
             protected DataSetBuilder<String, NumberOnlyBuildLabel> createDataSet()
             {
                 DataSetBuilder<String, NumberOnlyBuildLabel> dataSetBuilder = new DataSetBuilder<String, NumberOnlyBuildLabel>();
-//                reports = new Reports();
+
                 List<Report> ExistingReports = reports.getExistingReportsList(getProject());
 
                 for (Report report : ExistingReports) {
@@ -120,6 +120,7 @@ public class APICoverageProjectAction implements Action {
         protected JFreeChart createGraph()
         {
             final CategoryDataset dataset = createDataSet().build();
+
             final JFreeChart chart = ChartFactory.createLineChart(graphTitle, // title
                     "Build #", // category axis label
                     "Percentage %", // value axis label
