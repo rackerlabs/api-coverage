@@ -1,5 +1,5 @@
 #IDE Project Files
-*.idea
+.idea/*
 
 #OSX files
 .DS_Store
