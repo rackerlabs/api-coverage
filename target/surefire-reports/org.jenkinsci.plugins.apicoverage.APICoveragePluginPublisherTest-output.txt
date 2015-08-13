@@ -1,21 +1,21 @@
-Exploding /Users/prit8976/.m2/repository/org/jenkins-ci/main/jenkins-war/1.580.1/jenkins-war-1.580.1-war-for-test.jar into /Users/prit8976/Documents/api-coverage/./target/jenkins-for-test
-Aug 13, 2015 2:32:42 AM org.jvnet.hudson.test.JenkinsRule createWebServer
-INFO: Running on http://localhost:58219/jenkins/
-Aug 13, 2015 2:32:42 AM jenkins.InitReactorRunner$1 onAttained
+Picking up existing exploded jenkins.war at /Users/prit8976/Documents/api-coverage/./target/jenkins-for-test
+Aug 13, 2015 2:48:17 AM org.jvnet.hudson.test.JenkinsRule createWebServer
+INFO: Running on http://localhost:58645/jenkins/
+Aug 13, 2015 2:48:17 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Aug 13, 2015 2:32:47 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:22 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Aug 13, 2015 2:32:47 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:22 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Aug 13, 2015 2:32:47 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:22 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Aug 13, 2015 2:32:47 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:22 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Aug 13, 2015 2:32:47 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:22 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Aug 13, 2015 2:32:49 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:24 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Aug 13, 2015 2:32:49 AM hudson.UDPBroadcastThread run
+Aug 13, 2015 2:48:24 AM hudson.UDPBroadcastThread run
 WARNING: UDP handling problem
 java.net.SocketException: Can't assign requested address
 	at java.net.PlainDatagramSocketImpl.join(Native Method)
@@ -25,9 +25,9 @@ java.net.SocketException: Can't assign requested address
 
 === Starting testEmptyFileException(org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest)
 in APICoverageProjectAction's constructor
-Aug 13, 2015 2:32:49 AM hudson.model.Run execute
+Aug 13, 2015 2:48:25 AM hudson.model.Run execute
 INFO: test0 #1 main build action completed: SUCCESS
-Aug 13, 2015 2:32:49 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
+Aug 13, 2015 2:48:25 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
 WARNING: Publisher org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher aborted due to exception
 java.io.IOException: The template file has no content.
 	at org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher.perform(APICoveragePluginPublisher.java:66)
@@ -41,23 +41,23 @@ java.io.IOException: The template file has no content.
 	at hudson.model.ResourceController.execute(ResourceController.java:89)
 	at hudson.model.Executor.run(Executor.java:240)
 
-Aug 13, 2015 2:32:50 AM org.jvnet.hudson.test.JenkinsRule createWebServer
-INFO: Running on http://localhost:58225/jenkins/
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM org.jvnet.hudson.test.JenkinsRule createWebServer
+INFO: Running on http://localhost:58653/jenkins/
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Aug 13, 2015 2:32:50 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:25 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Aug 13, 2015 2:32:50 AM hudson.UDPBroadcastThread run
+Aug 13, 2015 2:48:25 AM hudson.UDPBroadcastThread run
 WARNING: UDP handling problem
 java.net.SocketException: Can't assign requested address
 	at java.net.PlainDatagramSocketImpl.join(Native Method)
@@ -67,25 +67,25 @@ java.net.SocketException: Can't assign requested address
 
 === Starting testBuildActionCreated(org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest)
 in APICoverageProjectAction's constructor
-Aug 13, 2015 2:32:50 AM hudson.model.Run execute
+Aug 13, 2015 2:48:25 AM hudson.model.Run execute
 INFO: test0 #1 main build action completed: SUCCESS
-Aug 13, 2015 2:32:53 AM org.jvnet.hudson.test.JenkinsRule createWebServer
-INFO: Running on http://localhost:58233/jenkins/
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM org.jvnet.hudson.test.JenkinsRule createWebServer
+INFO: Running on http://localhost:58658/jenkins/
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Aug 13, 2015 2:32:53 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:28 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Aug 13, 2015 2:32:54 AM hudson.UDPBroadcastThread run
+Aug 13, 2015 2:48:29 AM hudson.UDPBroadcastThread run
 WARNING: UDP handling problem
 java.net.SocketException: Can't assign requested address
 	at java.net.PlainDatagramSocketImpl.join(Native Method)
@@ -95,11 +95,11 @@ java.net.SocketException: Can't assign requested address
 
 === Starting testTemplateFileNotInWorkspace(org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest)
 in APICoverageProjectAction's constructor
-Aug 13, 2015 2:32:54 AM hudson.model.Run execute
+Aug 13, 2015 2:48:29 AM hudson.model.Run execute
 INFO: test0 #1 main build action completed: SUCCESS
-Aug 13, 2015 2:32:54 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
+Aug 13, 2015 2:48:29 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
 WARNING: Publisher org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher aborted due to exception
-java.io.FileNotFoundException: /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson105512031658858024test/workspace/test0/templateNotInWorkspace.json (No such file or directory)
+java.io.FileNotFoundException: /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson323684582754071307test/workspace/test0/templateNotInWorkspace.json (No such file or directory)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(FileInputStream.java:146)
 	at hudson.FilePath.read(FilePath.java:1738)
@@ -115,23 +115,23 @@ java.io.FileNotFoundException: /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/
 	at hudson.model.ResourceController.execute(ResourceController.java:89)
 	at hudson.model.Executor.run(Executor.java:240)
 
-Aug 13, 2015 2:32:54 AM org.jvnet.hudson.test.JenkinsRule createWebServer
-INFO: Running on http://localhost:58235/jenkins/
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM org.jvnet.hudson.test.JenkinsRule createWebServer
+INFO: Running on http://localhost:58660/jenkins/
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started initialization
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Listed all plugins
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Prepared all plugins
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Started all plugins
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Augmented all extensions
-Aug 13, 2015 2:32:54 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:29 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Loaded all jobs
-Aug 13, 2015 2:32:55 AM jenkins.InitReactorRunner$1 onAttained
+Aug 13, 2015 2:48:30 AM jenkins.InitReactorRunner$1 onAttained
 INFO: Completed initialization
-Aug 13, 2015 2:32:55 AM hudson.UDPBroadcastThread run
+Aug 13, 2015 2:48:30 AM hudson.UDPBroadcastThread run
 WARNING: UDP handling problem
 java.net.SocketException: Can't assign requested address
 	at java.net.PlainDatagramSocketImpl.join(Native Method)
@@ -141,11 +141,11 @@ java.net.SocketException: Can't assign requested address
 
 === Starting testPathFileNotInWorkspace(org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisherTest)
 in APICoverageProjectAction's constructor
-Aug 13, 2015 2:32:55 AM hudson.model.Run execute
+Aug 13, 2015 2:48:30 AM hudson.model.Run execute
 INFO: test0 #1 main build action completed: SUCCESS
-Aug 13, 2015 2:32:55 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
+Aug 13, 2015 2:48:30 AM hudson.model.AbstractBuild$AbstractBuildExecution reportError
 WARNING: Publisher org.jenkinsci.plugins.apicoverage.APICoveragePluginPublisher aborted due to exception
-java.io.FileNotFoundException: /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson3824879886653383009test/workspace/test0/pathNotInWorkspace.json (No such file or directory)
+java.io.FileNotFoundException: /var/folders/2p/ytpqqnlx0lb0wf0w99_dp8br_vv_ty/T/hudson8965512174772425781test/workspace/test0/pathNotInWorkspace.json (No such file or directory)
 	at java.io.FileInputStream.open(Native Method)
 	at java.io.FileInputStream.<init>(FileInputStream.java:146)
 	at hudson.FilePath.read(FilePath.java:1738)
