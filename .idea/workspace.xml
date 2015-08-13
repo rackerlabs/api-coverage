@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f724337a-70f1-4149-b23b-9440e998faaa" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_4.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/work/jobs/test0/workspace" afterPath="$PROJECT_DIR$/work/jobs/test0/workspace" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-coverage.iml" afterPath="$PROJECT_DIR$/api-coverage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ultimate-coverage.iws" />
