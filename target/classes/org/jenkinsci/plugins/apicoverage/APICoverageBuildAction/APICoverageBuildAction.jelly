@@ -66,10 +66,12 @@
                                 var color = path.getAttribute('stroke');
                                 path.setAttribute('stroke', "rgb(255,153,51)");
                                 console.log('stroke', path.getAttribute('stroke'));
-                            } else if(parseInt(path.getAttribute('stroke-width')) &lt; 10){
-                                var width = parseInt(path.getAttribute('stroke-width')) + 1
-                                console.log('stroke width', width);
-                                path.setAttribute('stroke-width', width + "");
+                            } else {
+                                if(parseInt(path.getAttribute('stroke-width')) &lt; 10){
+                                    var width = parseInt(path.getAttribute('stroke-width')) + 1
+                                    console.log('stroke width', width);
+                                    path.setAttribute('stroke-width', width + "");
+                                }
                                 var color = path.getAttribute('stroke');
                                 path.setAttribute('stroke', incrementColor(color));
                                 console.log('stroke', path.getAttribute('stroke'));
