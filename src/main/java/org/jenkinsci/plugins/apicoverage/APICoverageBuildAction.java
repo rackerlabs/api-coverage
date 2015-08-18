@@ -3,12 +3,10 @@ package org.jenkinsci.plugins.apicoverage;
 import hudson.model.AbstractBuild;
 import hudson.model.Action;
 
-import java.io.Serializable;
-
 /**
  * Created by prit8976 on 7/20/15.
  */
-public class APICoverageBuildAction implements Action, Serializable {
+public class APICoverageBuildAction implements Action {
 
     private String steps;
     private String template;

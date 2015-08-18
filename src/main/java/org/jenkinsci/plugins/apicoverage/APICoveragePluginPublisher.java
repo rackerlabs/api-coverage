@@ -147,7 +147,6 @@ public class APICoveragePluginPublisher extends Recorder {
         @Override
         public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
             save();
-            System.out.println(formData);
             return super.configure(req, formData);
         }
     }

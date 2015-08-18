@@ -142,8 +142,6 @@ public class APICoverageProjectAction implements Action {
             renderer.setSeriesPaint(0, Color.red);
             renderer.setSeriesPaint(1, Color.green);
             renderer.setBaseShapesVisible(true);
-            //renderer.setSeriesShapesVisible(true);
-            //renderer.setBaseItemLabelGenerator(new CustomLabelGenerator());
             renderer.setBaseItemLabelsVisible(Boolean.TRUE);
             renderer.setBaseItemLabelGenerator(new StandardCategoryItemLabelGenerator());
 
