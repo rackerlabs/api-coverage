@@ -1,5 +1,4 @@
-<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
-         xmlns:l="/lib/layout">
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout">
     <l:layout>
         <st:include it="${it.project}" page="sidepanel.jelly"/>
         <st:include page="/tabview/css.jelly" />

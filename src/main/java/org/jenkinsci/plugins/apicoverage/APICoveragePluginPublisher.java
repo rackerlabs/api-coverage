@@ -1,5 +1,6 @@
 package org.jenkinsci.plugins.apicoverage;
 
+import hudson.AbortException;
 import hudson.Extension;
 import hudson.FilePath;
 import hudson.Launcher;
@@ -19,7 +20,6 @@ import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
 
 import javax.servlet.ServletException;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -45,6 +45,15 @@ public class APICoveragePluginPublisher extends Recorder {
         return this.templateFile;
     }
 
+    /**
+     *
+     * @param build
+     * @param launcher
+     * @param listener
+     * @return
+     * @throws IOException
+     * @throws InterruptedException
+     */
     @Override
     public boolean perform(final AbstractBuild build, Launcher launcher, BuildListener listener) throws IOException, InterruptedException {
 
@@ -56,7 +65,7 @@ public class APICoveragePluginPublisher extends Recorder {
         try {
             jsonData_path = fp_path.readToString();
             template = fp_template.readToString();
-        } catch (FileNotFoundException e) {
+        } catch (AbortException e) {
             build.setResult(hudson.model.Result.FAILURE);
             throw e;
         }
@@ -105,7 +114,7 @@ public class APICoveragePluginPublisher extends Recorder {
 
     @Override
     public BuildStepMonitor getRequiredMonitorService() {
-        return BuildStepMonitor.BUILD;
+        return BuildStepMonitor.NONE;
     }
 
     @Override
